@@ -1,0 +1,1056 @@
+
+<!DOCTYPE HTML>
+<html lang="" >
+    <head>
+        <meta charset="UTF-8">
+        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+        <title>下载和处理文件和图片 · GitBook</title>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="description" content="">
+        <meta name="generator" content="GitBook 3.2.3">
+        
+        
+        
+    
+    <link rel="stylesheet" href="../gitbook/style.css">
+
+    
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-highlight/website.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-search/search.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-fontsettings/website.css">
+                
+            
+        
+
+    
+
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+
+        
+    
+    
+    <meta name="HandheldFriendly" content="true"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <link rel="apple-touch-icon-precomposed" sizes="152x152" href="../gitbook/images/apple-touch-icon-precomposed-152.png">
+    <link rel="shortcut icon" href="../gitbook/images/favicon.ico" type="image/x-icon">
+
+    
+    <link rel="next" href="Deploying Spiders.html" />
+    
+    
+    <link rel="prev" href="Debugging memory leaks.html" />
+    
+
+    </head>
+    <body>
+        
+<div class="book">
+    <div class="book-summary">
+        
+            
+<div id="book-search-input" role="search">
+    <input type="text" placeholder="Type to search" />
+</div>
+
+            
+                <nav role="navigation">
+                
+
+
+<ul class="summary">
+    
+    
+
+    
+
+    
+        
+        
+    
+        <li class="chapter " data-level="1.1" data-path="../">
+            
+                <a href="../">
+            
+                    
+                    简介
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2" data-path="../1.FIRST STEPS/README.md">
+            
+                <span>
+            
+                    
+                    粮草先行(FIRST STEPS)
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.2.1" data-path="../1.FIRST STEPS/tutorial.html">
+            
+                <a href="../1.FIRST STEPS/tutorial.html">
+            
+                    
+                    Scrapy指引
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.2" data-path="../1.FIRST STEPS/examples.html">
+            
+                <a href="../1.FIRST STEPS/examples.html">
+            
+                    
+                    一些例子
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3" data-path="../2.BASIC CONCEPTS/README.md">
+            
+                <span>
+            
+                    
+                    基本概念(BASIC CONCEPTS)
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.3.1" data-path="../2.BASIC CONCEPTS/Command line tool.html">
+            
+                <a href="../2.BASIC CONCEPTS/Command line tool.html">
+            
+                    
+                    命令行
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.2" data-path="../2.BASIC CONCEPTS/Spiders.html">
+            
+                <a href="../2.BASIC CONCEPTS/Spiders.html">
+            
+                    
+                    蜘蛛
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.3" data-path="../2.BASIC CONCEPTS/Selectors.html">
+            
+                <a href="../2.BASIC CONCEPTS/Selectors.html">
+            
+                    
+                    选择器
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.4" data-path="../2.BASIC CONCEPTS/Items.html">
+            
+                <a href="../2.BASIC CONCEPTS/Items.html">
+            
+                    
+                    项目
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.5" data-path="../2.BASIC CONCEPTS/Item Loaders.html">
+            
+                <a href="../2.BASIC CONCEPTS/Item Loaders.html">
+            
+                    
+                    项目加载器
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.6" data-path="../2.BASIC CONCEPTS/Scrapy_shell.html">
+            
+                <a href="../2.BASIC CONCEPTS/Scrapy_shell.html">
+            
+                    
+                    Scrapy Shell
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.7" data-path="../2.BASIC CONCEPTS/Item Pipeline.html">
+            
+                <a href="../2.BASIC CONCEPTS/Item Pipeline.html">
+            
+                    
+                    项目管道
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.8" data-path="../2.BASIC CONCEPTS/Feed exports.html">
+            
+                <a href="../2.BASIC CONCEPTS/Feed exports.html">
+            
+                    
+                    Feed输出
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.9" data-path="../2.BASIC CONCEPTS/Requests and Responses.html">
+            
+                <a href="../2.BASIC CONCEPTS/Requests and Responses.html">
+            
+                    
+                    请求与响应
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.10" data-path="../2.BASIC CONCEPTS/Link Extractors.html">
+            
+                <a href="../2.BASIC CONCEPTS/Link Extractors.html">
+            
+                    
+                    链接提取器
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.11" data-path="../2.BASIC CONCEPTS/Settings.html">
+            
+                <a href="../2.BASIC CONCEPTS/Settings.html">
+            
+                    
+                    设置
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.12" data-path="../2.BASIC CONCEPTS/Exceptions.html">
+            
+                <a href="../2.BASIC CONCEPTS/Exceptions.html">
+            
+                    
+                    例外
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4" data-path="../3.BULIT-IN SERVICES/README.md">
+            
+                <span>
+            
+                    
+                    内置服务(BULIT IN SERVICES)
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.4.1" data-path="../3.BULIT-IN SERVICES/Logging.html">
+            
+                <a href="../3.BULIT-IN SERVICES/Logging.html">
+            
+                    
+                    日志记录
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.2" data-path="../3.BULIT-IN SERVICES/Stats Collection.html">
+            
+                <a href="../3.BULIT-IN SERVICES/Stats Collection.html">
+            
+                    
+                    状态收集
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.3" data-path="../3.BULIT-IN SERVICES/Sending e-mail.html">
+            
+                <a href="../3.BULIT-IN SERVICES/Sending e-mail.html">
+            
+                    
+                    发送邮件
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.4" data-path="../3.BULIT-IN SERVICES/Telnet Console.html">
+            
+                <a href="../3.BULIT-IN SERVICES/Telnet Console.html">
+            
+                    
+                    第一节
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.5" data-path="../3.BULIT-IN SERVICES/Web Service.html">
+            
+                <a href="../3.BULIT-IN SERVICES/Web Service.html">
+            
+                    
+                    网络服务
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5" data-path="README.md">
+            
+                <span>
+            
+                    
+                    解决特殊问题(SOLVING SPECIFIC PROBLEMS)
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.5.1" data-path="Frequently Asked Questions.html">
+            
+                <a href="Frequently Asked Questions.html">
+            
+                    
+                    一些疑问
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.2" data-path="Debugging Spiders.html">
+            
+                <a href="Debugging Spiders.html">
+            
+                    
+                    调试蜘蛛
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.3" data-path="Spiders Contracts.html">
+            
+                <a href="Spiders Contracts.html">
+            
+                    
+                    发送邮件
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.4" data-path="Common Practices.html">
+            
+                <a href="Common Practices.html">
+            
+                    
+                    常用套路
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.5" data-path="Broad Crawls.html">
+            
+                <a href="Broad Crawls.html">
+            
+                    
+                    深度爬取
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.6" data-path="Using Firefox for scraping.html">
+            
+                <a href="Using Firefox for scraping.html">
+            
+                    
+                    用火狐浏览器爬取
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.7" data-path="Using Firebug for scraping.html">
+            
+                <a href="Using Firebug for scraping.html">
+            
+                    
+                    用Firebug爬取
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.8" data-path="Debugging memory leaks.html">
+            
+                <a href="Debugging memory leaks.html">
+            
+                    
+                    调试内存溢出
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter active" data-level="1.5.9" data-path="Downloading and processing files and images.html">
+            
+                <a href="Downloading and processing files and images.html">
+            
+                    
+                    下载和处理文件和图片
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.10" data-path="Deploying Spiders.html">
+            
+                <a href="Deploying Spiders.html">
+            
+                    
+                    部署爬虫
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.11" data-path="AutoThrottle extension.html">
+            
+                <a href="AutoThrottle extension.html">
+            
+                    
+                    自动Throttle拓展
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.12" data-path="Benchmarking.html">
+            
+                <a href="Benchmarking.html">
+            
+                    
+                    Web Service
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.13" data-path="Jobs_pausing and resuming crawls.html">
+            
+                <a href="Jobs_pausing and resuming crawls.html">
+            
+                    
+                    如何暂停与继续爬取
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6" data-path="../5.EXTENDING SCRAPY/README.md">
+            
+                <span>
+            
+                    
+                    Scrapy拓展用法(EXTENDING SCRAPY)
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.6.1" data-path="../5.EXTENDING SCRAPY/Architecture overview.html">
+            
+                <a href="../5.EXTENDING SCRAPY/Architecture overview.html">
+            
+                    
+                    架构描述
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.2" data-path="../5.EXTENDING SCRAPY/Downloader Middleware.html">
+            
+                <a href="../5.EXTENDING SCRAPY/Downloader Middleware.html">
+            
+                    
+                    下载中间件
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.3" data-path="../5.EXTENDING SCRAPY/Spider Middleware.html">
+            
+                <a href="../5.EXTENDING SCRAPY/Spider Middleware.html">
+            
+                    
+                    蜘蛛中间件
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.4" data-path="../5.EXTENDING SCRAPY/Extensions.html">
+            
+                <a href="../5.EXTENDING SCRAPY/Extensions.html">
+            
+                    
+                    拓展
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.5" data-path="../5.EXTENDING SCRAPY/Core API.html">
+            
+                <a href="../5.EXTENDING SCRAPY/Core API.html">
+            
+                    
+                    主要API
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.6" data-path="../5.EXTENDING SCRAPY/Signals.html">
+            
+                <a href="../5.EXTENDING SCRAPY/Signals.html">
+            
+                    
+                    信号
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7" data-path="../6.ALL THE REST/README.md">
+            
+                <span>
+            
+                    
+                    杂项(ALL THE REST)
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.7.1" data-path="../6.ALL THE REST/Question.html">
+            
+                <a href="../6.ALL THE REST/Question.html">
+            
+                    
+                    疑问
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+
+    
+
+    <li class="divider"></li>
+
+    <li>
+        <a href="https://www.gitbook.com" target="blank" class="gitbook-link">
+            Published with GitBook
+        </a>
+    </li>
+</ul>
+
+
+                </nav>
+            
+        
+    </div>
+
+    <div class="book-body">
+        
+            <div class="body-inner">
+                
+                    
+
+<div class="book-header" role="navigation">
+    
+
+    <!-- Title -->
+    <h1>
+        <i class="fa fa-circle-o-notch fa-spin"></i>
+        <a href=".." >下载和处理文件和图片</a>
+    </h1>
+</div>
+
+
+
+
+                    <div class="page-wrapper" tabindex="-1" role="main">
+                        <div class="page-inner">
+                            
+<div id="book-search-results">
+    <div class="search-noresults">
+    
+                                <section class="normal markdown-section">
+                                
+                                <h1 id="&#x4E0B;&#x8F7D;&#x548C;&#x5904;&#x7406;&#x6587;&#x4EF6;&#x548C;&#x56FE;&#x50CF;">&#x4E0B;&#x8F7D;&#x548C;&#x5904;&#x7406;&#x6587;&#x4EF6;&#x548C;&#x56FE;&#x50CF;</h1>
+<p>Scrapy&#x63D0;&#x4F9B;&#x53EF;&#x91CD;&#x590D;&#x4F7F;&#x7528;&#x7684;<a href="https://doc.scrapy.org/en/latest/topics/item-pipeline.html" target="_blank">&#x9879;&#x76EE;&#x7BA1;&#x9053;&#xFF0C;</a>&#x7528;&#x4E8E;&#x4E0B;&#x8F7D;&#x9644;&#x52A0;&#x5230;&#x7279;&#x5B9A;&#x9879;&#x76EE;&#x7684;&#x6587;&#x4EF6;&#xFF08;&#x4F8B;&#x5982;&#xFF0C;&#x5F53;&#x60A8;&#x522E;&#x64E6;&#x4EA7;&#x54C1;&#x5E76;&#x4E14;&#x8FD8;&#x60F3;&#x5728;&#x672C;&#x5730;&#x4E0B;&#x8F7D;&#x5176;&#x56FE;&#x50CF;&#x65F6;&#xFF09;&#x3002;&#x8FD9;&#x4E9B;&#x7BA1;&#x9053;&#x5171;&#x4EAB;&#x4E00;&#x4E9B;&#x529F;&#x80FD;&#x548C;&#x7ED3;&#x6784;&#xFF08;&#x6211;&#x4EEC;&#x5C06;&#x5B83;&#x4EEC;&#x79F0;&#x4E3A;&#x4ECB;&#x8D28;&#x7BA1;&#x9053;&#xFF09;&#xFF0C;&#x4F46;&#x901A;&#x5E38;&#x60A8;&#x53EF;&#x4EE5;&#x4F7F;&#x7528;&#x201C;&#x6587;&#x4EF6;&#x7BA1;&#x9053;&#x201D;&#x6216;&#x201C;&#x56FE;&#x50CF;&#x7BA1;&#x9053;&#x201D;&#x3002;</p>
+<p>&#x4E24;&#x4E2A;&#x7BA1;&#x9053;&#x90FD;&#x5B9E;&#x73B0;&#x8FD9;&#x4E9B;&#x529F;&#x80FD;&#xFF1A;</p>
+<ul>
+<li>&#x907F;&#x514D;&#x91CD;&#x65B0;&#x4E0B;&#x8F7D;&#x6700;&#x8FD1;&#x4E0B;&#x8F7D;&#x7684;&#x5A92;&#x4F53;</li>
+<li>&#x6307;&#x5B9A;&#x5B58;&#x50A8;&#x4ECB;&#x8D28;&#x7684;&#x4F4D;&#x7F6E;&#xFF08;&#x6587;&#x4EF6;&#x7CFB;&#x7EDF;&#x76EE;&#x5F55;&#xFF0C;Amazon S3&#x5B58;&#x50A8;&#x6876;&#xFF0C;Google&#x4E91;&#x5B58;&#x50A8;&#x5B58;&#x50A8;&#x6876;&#xFF09;</li>
+</ul>
+<p>&#x56FE;&#x50CF;&#x7BA1;&#x9053;&#x6709;&#x51E0;&#x4E2A;&#x989D;&#x5916;&#x7684;&#x529F;&#x80FD;&#x6765;&#x5904;&#x7406;&#x56FE;&#x50CF;&#xFF1A;</p>
+<ul>
+<li>&#x5C06;&#x6240;&#x6709;&#x4E0B;&#x8F7D;&#x7684;&#x56FE;&#x50CF;&#x8F6C;&#x6362;&#x4E3A;&#x901A;&#x7528;&#x683C;&#x5F0F;&#xFF08;JPG&#xFF09;&#x548C;&#x6A21;&#x5F0F;&#xFF08;RGB&#xFF09;</li>
+<li>&#x751F;&#x6210;&#x7F29;&#x7565;&#x56FE;</li>
+<li>&#x68C0;&#x67E5;&#x56FE;&#x50CF;&#x5BBD;&#x5EA6;/&#x9AD8;&#x5EA6;&#x4EE5;&#x786E;&#x4FDD;&#x5B83;&#x4EEC;&#x7B26;&#x5408;&#x6700;&#x5C0F;&#x9650;&#x5236;</li>
+</ul>
+<p>&#x7BA1;&#x9053;&#x8FD8;&#x4FDD;&#x7559;&#x5F53;&#x524D;&#x6B63;&#x5728;&#x8BA1;&#x5212;&#x4E0B;&#x8F7D;&#x7684;&#x90A3;&#x4E9B;&#x5A92;&#x4F53;URL&#x7684;&#x5185;&#x90E8;&#x961F;&#x5217;&#xFF0C;&#x5E76;&#x5C06;&#x5305;&#x542B;&#x76F8;&#x540C;&#x5A92;&#x4F53;&#x5230;&#x8FBE;&#x7684;&#x90A3;&#x4E9B;&#x54CD;&#x5E94;&#x8FDE;&#x63A5;&#x5230;&#x8BE5;&#x961F;&#x5217;&#x3002;&#x8FD9;&#x907F;&#x514D;&#x4E86;&#x591A;&#x4E2A;&#x9879;&#x76EE;&#x5171;&#x4EAB;&#x591A;&#x6B21;&#x4E0B;&#x8F7D;&#x76F8;&#x540C;&#x7684;&#x5A92;&#x4F53;&#x3002;</p>
+<h2 id="&#x4F7F;&#x7528;&#x6587;&#x4EF6;&#x7BA1;&#x9053;">&#x4F7F;&#x7528;&#x6587;&#x4EF6;&#x7BA1;&#x9053;</h2>
+<p>&#x5178;&#x578B;&#x7684;&#x5DE5;&#x4F5C;&#x6D41;&#x7A0B;<code>FilesPipeline</code>&#x5982;&#x4E0B;&#x6240;&#x793A;&#xFF1A;</p>
+<ol>
+<li>&#x5728;&#x4E00;&#x4E2A;&#x722C;&#x866B;&#x91CC;&#xFF0C;&#x60A8;&#x6293;&#x53D6;&#x4E00;&#x4E2A;&#x9879;&#x76EE;&#x5E76;&#x5C06;&#x6240;&#x9700;&#x7684;URL&#x653E;&#x5165;&#x4E00;&#x4E2A; <code>file_urls</code>&#x5B57;&#x6BB5;&#x4E2D;&#x3002;</li>
+<li>&#x8BE5;&#x9879;&#x76EE;&#x4ECE;&#x722C;&#x866B;&#x5185;&#x8FD4;&#x56DE;&#x5E76;&#x8F6C;&#x5230;&#x7269;&#x54C1;&#x7BA1;&#x9053;&#x3002;</li>
+<li>&#x5F53;&#x8BE5;&#x9879;&#x76EE;&#x8FDB;&#x5165;<code>FilesPipeline</code>&#xFF0C;&#x8BE5;<code>file_urls</code>&#x5B57;&#x6BB5;&#x4E2D;&#x7684;URL &#x5C06;&#x4F7F;&#x7528;&#x6807;&#x51C6;&#x7684;Scrapy&#x8C03;&#x5EA6;&#x5668;&#x548C;&#x4E0B;&#x8F7D;&#x5668;&#xFF08;&#x8FD9;&#x610F;&#x5473;&#x7740;&#x8C03;&#x5EA6;&#x5668;&#x548C;&#x4E0B;&#x8F7D;&#x5668;&#x4E2D;&#x95F4;&#x4EF6;&#x53EF;&#x4EE5;&#x91CD;&#x590D;&#x4F7F;&#x7528;&#xFF09;&#x8BA1;&#x5212;&#x4E0B;&#x8F7D;&#xFF0C;&#x4F46;&#x5177;&#x6709;&#x66F4;&#x9AD8;&#x7684;&#x4F18;&#x5148;&#x7EA7;&#xFF0C;&#x4F1A;&#x5728;&#x5176;&#x4ED6;&#x9875;&#x9762;&#x88AB;&#x6293;&#x53D6;&#x524D;&#x5904;&#x7406;&#x3002;&#x8BE5;&#x9879;&#x76EE;&#x5728;&#x8BE5;&#x7279;&#x5B9A;&#x7BA1;&#x9053;&#x9636;&#x6BB5;&#x4FDD;&#x6301;&#x201C;&#x9501;&#x5B9A;(locker)&#x201D;&#x72B6;&#x6001;&#xFF0C;&#x76F4;&#x5230;&#x6587;&#x4EF6;&#x5B8C;&#x6210;&#x4E0B;&#x8F7D;&#xFF08;&#x6216;&#x7531;&#x4E8E;&#x67D0;&#x79CD;&#x539F;&#x56E0;&#x672A;&#x5B8C;&#x6210;&#x4E0B;&#x8F7D;&#xFF09;&#x3002;</li>
+<li>&#x4E0B;&#x8F7D;&#x6587;&#x4EF6;&#x65F6;&#xFF0C;&#x53E6;&#x4E00;&#x4E2A;&#x5B57;&#x6BB5;&#xFF08;<code>files</code>&#xFF09;&#x5C06;&#x88AB;&#x66F4;&#x65B0;&#x5230;&#x7ED3;&#x6784;&#x4E2D;&#x3002;&#x8BE5;&#x5B57;&#x6BB5;&#x5C06;&#x5305;&#x542B;&#x4E00;&#x4E2A;&#x542B;&#x6709;&#x4E0B;&#x8F7D;&#x6587;&#x4EF6;&#x4FE1;&#x606F;&#x7684;&#x5B57;&#x5178;&#x5217;&#x8868;&#xFF0C;&#x4F8B;&#x5982;&#x4E0B;&#x8F7D;&#x7684;&#x8DEF;&#x5F84;&#xFF0C;&#x539F;&#x59CB;&#x6293;&#x53D6;&#x7684;URL&#xFF08;&#x4ECE;<code>file_urls</code>&#x5B57;&#x6BB5;&#x83B7;&#x53D6;&#xFF09;&#x548C;&#x6587;&#x4EF6;&#x6821;&#x9A8C;&#x7801;&#x3002;&#x8BE5;<code>files</code>&#x5B57;&#x6BB5;&#x5217;&#x8868;&#x4E2D;&#x7684;&#x6587;&#x4EF6;&#x5C06;&#x4FDD;&#x7559;&#x539F;&#x59CB;<code>file_urls</code>&#x5B57;&#x6BB5;&#x7684;&#x76F8;&#x540C;&#x987A;&#x5E8F;&#x3002;&#x5982;&#x679C;&#x67D0;&#x4E2A;&#x6587;&#x4EF6;&#x4E0B;&#x8F7D;&#x5931;&#x8D25;&#xFF0C;&#x5219;&#x4F1A;&#x8BB0;&#x5F55;&#x4E0B;&#x9519;&#x8BEF;&#x4FE1;&#x606F;&#x5E76;&#x4E14;&#x8BE5;&#x6587;&#x4EF6;&#x4E0D;&#x4F1A;&#x51FA;&#x73B0;&#x5728;&#x8BE5;<code>files</code>&#x5B57;&#x6BB5;&#x4E2D;&#x3002;</li>
+</ol>
+<h2 id="&#x4F7F;&#x7528;&#x56FE;&#x50CF;&#x7BA1;&#x9053;">&#x4F7F;&#x7528;&#x56FE;&#x50CF;&#x7BA1;&#x9053;</h2>
+<p>&#x4F7F;&#x7528;<a href="https://doc.scrapy.org/en/latest/topics/media-pipeline.html#scrapy.pipelines.images.ImagesPipeline" target="_blank"><code>ImagesPipeline</code></a>&#x5F88;&#x50CF;&#x4F7F;&#x7528;<code>FilesPipeline</code>&#xFF0C;&#x9664;&#x4E86;&#x4F7F;&#x7528;&#x7684;&#x9ED8;&#x8BA4;&#x5B57;&#x6BB5;&#x540D;&#x79F0;&#x4E0D;&#x540C;&#xFF1A;&#x60A8;&#x7684;<code>image_urls</code>&#x7528;&#x4E8E;&#x9879;&#x76EE;&#x7684;&#x56FE;&#x50CF;URL&#xFF0C;&#x5B83;&#x5C06;&#x586B;&#x5145;<code>images</code>&#x5B57;&#x6BB5;&#x4EE5;&#x83B7;&#x53D6;&#x6709;&#x5173;&#x4E0B;&#x8F7D;&#x56FE;&#x50CF;&#x7684;&#x4FE1;&#x606F;&#x3002;</p>
+<p>&#x5BF9;&#x56FE;&#x50CF;&#x6587;&#x4EF6;&#x4F7F;&#x7528;<a href="https://doc.scrapy.org/en/latest/topics/media-pipeline.html#scrapy.pipelines.images.ImagesPipeline" target="_blank"><code>ImagesPipeline</code></a>&#x7684;&#x4F18;&#x70B9;&#x662F;&#xFF0C;&#x60A8;&#x53EF;&#x4EE5;&#x914D;&#x7F6E;&#x4E00;&#x4E9B;&#x989D;&#x5916;&#x7684;&#x529F;&#x80FD;&#xFF0C;&#x4F8B;&#x5982;&#x751F;&#x6210;&#x7F29;&#x7565;&#x56FE;&#x548C;&#x6839;&#x636E;&#x56FE;&#x50CF;&#x5927;&#x5C0F;&#x8FC7;&#x6EE4;&#x56FE;&#x50CF;&#x3002;</p>
+<p>Images Pipeline&#x4F7F;&#x7528;<a href="https://github.com/python-pillow/Pillow" target="_blank">Pillow</a>&#x5C06;&#x56FE;&#x50CF;&#x7F29;&#x7565;&#x56FE;&#x548C;&#x89C4;&#x683C;&#x5316;&#x4E3A;JPEG / RGB&#x683C;&#x5F0F;&#xFF0C;&#x56E0;&#x6B64;&#x60A8;&#x9700;&#x8981;&#x5B89;&#x88C5;&#x6B64;&#x5E93;&#x624D;&#x80FD;&#x4F7F;&#x7528;&#x5B83;&#x3002; &#x5728;&#x5927;&#x591A;&#x6570;&#x60C5;&#x51B5;&#x4E0B;&#xFF0C;<a href="http://www.pythonware.com/products/pil/" target="_blank">Python&#x6210;&#x50CF;&#x5E93;</a>&#xFF08;PIL&#xFF09;&#x4E5F;&#x5E94;&#x8BE5;&#x53EF;&#x4EE5;&#x5DE5;&#x4F5C;&#xFF0C;&#x4F46;&#x662F;&#x5728;&#x67D0;&#x4E9B;&#x8BBE;&#x7F6E;&#x4E2D;&#x4F1A;&#x5BFC;&#x81F4;&#x9EBB;&#x70E6;&#xFF0C;&#x6240;&#x4EE5;&#x6211;&#x4EEC;&#x5EFA;&#x8BAE;&#x4F7F;&#x7528;<a href="https://github.com/python-pillow/Pillow" target="_blank">Pillow</a>&#x800C;&#x4E0D;&#x662F;PIL&#x3002;</p>
+<h2 id="&#x542F;&#x7528;&#x5A92;&#x4F53;&#x7BA1;&#x9053;">&#x542F;&#x7528;&#x5A92;&#x4F53;&#x7BA1;&#x9053;</h2>
+<p>&#x8981;&#x542F;&#x7528;&#x5A92;&#x4F53;&#x7BA1;&#x9053;&#xFF0C;&#x60A8;&#x5FC5;&#x987B;&#x5148;&#x5C06;&#x5176;&#x6DFB;&#x52A0;&#x5230;&#x60A8;&#x7684;&#x9879;&#x76EE; <a href="https://doc.scrapy.org/en/latest/topics/settings.html#std:setting-ITEM_PIPELINES" target="_blank"><code>ITEM_PIPELINES</code></a>&#x8BBE;&#x7F6E;&#x4E2D;&#x3002;</p>
+<p>&#x5BF9;&#x4E8E;&#x56FE;&#x50CF;&#x7BA1;&#x9053;&#xFF0C;&#x8BF7;&#x4F7F;&#x7528;&#xFF1A;</p>
+<pre><code>ITEM_PIPELINES = {&apos;scrapy.pipelines.images.ImagesPipeline&apos;: 1}
+</code></pre><p>&#x5BF9;&#x4E8E;&#x6587;&#x4EF6;&#x7BA1;&#x9053;&#xFF0C;&#x8BF7;&#x4F7F;&#x7528;&#xFF1A;</p>
+<pre><code>ITEM_PIPELINES = {&apos;scrapy.pipelines.files.FilesPipeline&apos;: 1}
+</code></pre><p>&#x6CE8;&#x610F;</p>
+<p>&#x60A8;&#x4E5F;&#x53EF;&#x4EE5;&#x540C;&#x65F6;&#x4F7F;&#x7528;&#x6587;&#x4EF6;&#x548C;&#x56FE;&#x50CF;&#x7BA1;&#x9053;&#x3002;</p>
+<p>&#x7136;&#x540E;&#xFF0C;&#x5C06;&#x76EE;&#x6807;&#x5B58;&#x50A8;&#x8BBE;&#x7F6E;&#x914D;&#x7F6E;&#x4E3A;&#x7528;&#x4E8E;&#x5B58;&#x50A8;&#x4E0B;&#x8F7D;&#x56FE;&#x50CF;&#x7684;&#x6709;&#x6548;&#x503C;&#x3002;&#x5426;&#x5219;&#xFF0C;&#x7BA1;&#x9053;&#x5C06;&#x4FDD;&#x6301;&#x7981;&#x7528;&#x72B6;&#x6001;&#xFF0C;&#x5373;&#x4F7F;&#x60A8;&#x5C06;&#x5176;&#x5305;&#x542B;&#x5728;<a href="https://doc.scrapy.org/en/latest/topics/settings.html#std:setting-ITEM_PIPELINES" target="_blank"><code>ITEM_PIPELINES</code></a>&#x8BBE;&#x7F6E;&#x4E2D;&#x3002;</p>
+<p>&#x5BF9;&#x4E8E;&#x6587;&#x4EF6;&#x7BA1;&#x9053;&#xFF0C;&#x8BF7;&#x8BBE;&#x7F6E;&#x4EE5;&#x4E0B;<a href="https://doc.scrapy.org/en/latest/topics/media-pipeline.html#std:setting-FILES_STORE" target="_blank"><code>FILES_STORE</code></a>&#x8BBE;&#x7F6E;&#xFF1A;</p>
+<pre><code>FILES_STORE = &apos;/path/to/valid/dir&apos;
+</code></pre><p>&#x5BF9;&#x4E8E;&#x56FE;&#x50CF;&#x7BA1;&#x7EBF;&#xFF0C;&#x8BBE;&#x7F6E;<a href="https://doc.scrapy.org/en/latest/topics/media-pipeline.html#std:setting-IMAGES_STORE" target="_blank"><code>IMAGES_STORE</code></a>&#x8BBE;&#x7F6E;&#xFF1A;</p>
+<pre><code>IMAGES_STORE = &apos;/path/to/valid/dir&apos;
+</code></pre><h2 id="&#x652F;&#x6301;&#x7684;&#x5B58;&#x50A8;">&#x652F;&#x6301;&#x7684;&#x5B58;&#x50A8;</h2>
+<p>&#x6587;&#x4EF6;&#x7CFB;&#x7EDF;&#x76EE;&#x524D;&#x662F;&#x552F;&#x4E00;&#x5B98;&#x65B9;&#x652F;&#x6301;&#x7684;&#x5B58;&#x50A8;&#xFF0C;&#x4F46;&#x4E5F;&#x652F;&#x6301;&#x5728;<a href="https://aws.amazon.com/s3/" target="_blank">Amazon S3</a>&#x548C;<a href="https://cloud.google.com/storage/" target="_blank">Google&#x4E91;&#x5B58;&#x50A8;&#x4E2D;</a>&#x5B58;&#x50A8;&#x6587;&#x4EF6;&#x3002;</p>
+<h3 id="&#x6587;&#x4EF6;&#x7CFB;&#x7EDF;&#x5B58;&#x50A8;">&#x6587;&#x4EF6;&#x7CFB;&#x7EDF;&#x5B58;&#x50A8;</h3>
+<p>&#x8FD9;&#x4E9B;&#x6587;&#x4EF6;&#x4F7F;&#x7528;&#x5B83;&#x4EEC;&#x7684;URL &#x7684;<a href="https://en.wikipedia.org/wiki/SHA_hash_functions" target="_blank">SHA1&#x6563;&#x5217;</a>&#x6765;&#x5B58;&#x50A8;&#x6587;&#x4EF6;&#x540D;&#x3002;</p>
+<p>&#x4F8B;&#x5982;&#xFF0C;&#x4EE5;&#x4E0B;&#x56FE;&#x7247;&#x7F51;&#x5740;&#xFF1A;</p>
+<pre><code>http://www.example.com/image.jpg
+</code></pre><p>&#x8C01;&#x7684;SHA1hash&#x662F;&#xFF1A;</p>
+<pre><code>3afec3b4765f8f0a07b78f98c07b83f013567a0a
+</code></pre><p>&#x5C06;&#x88AB;&#x4E0B;&#x8F7D;&#x5E76;&#x5B58;&#x50A8;&#x5728;&#x4EE5;&#x4E0B;&#x6587;&#x4EF6;&#x4E2D;&#xFF1A;</p>
+<pre><code>&lt;IMAGES_STORE&gt;/full/3afec3b4765f8f0a07b78f98c07b83f013567a0a.jpg
+</code></pre><p>&#x54EA;&#x91CC;&#xFF1A;</p>
+<ul>
+<li><code>&lt;IMAGES_STORE&gt;</code>&#x662F;<a href="https://doc.scrapy.org/en/latest/topics/media-pipeline.html#std:setting-IMAGES_STORE" target="_blank"><code>IMAGES_STORE</code></a>&#x56FE;&#x50CF;&#x7BA1;&#x9053;&#x8BBE;&#x7F6E;&#x4E2D;&#x5B9A;&#x4E49;&#x7684;&#x76EE;&#x5F55;&#x3002;</li>
+<li><code>full</code>&#x662F;&#x5C06;&#x5B8C;&#x6574;&#x56FE;&#x50CF;&#x4E0E;&#x7F29;&#x7565;&#x56FE;&#x5206;&#x5F00;&#x7684;&#x5B50;&#x76EE;&#x5F55;&#xFF08;&#x5982;&#x679C;&#x4F7F;&#x7528;&#x7684;&#x8BDD;&#xFF09;&#x3002;&#x6709;&#x5173;&#x66F4;&#x591A;&#x4FE1;&#x606F;&#xFF0C;&#x8BF7;&#x53C2;&#x9605;<a href="https://doc.scrapy.org/en/latest/topics/media-pipeline.html#topics-images-thumbnails" target="_blank">&#x56FE;&#x50CF;&#x7684;&#x7F29;&#x7565;&#x56FE;&#x751F;&#x6210;</a>&#x3002;</li>
+</ul>
+<h3 id="amazon-s3&#x5B58;&#x50A8;">Amazon S3&#x5B58;&#x50A8;</h3>
+<p><a href="https://doc.scrapy.org/en/latest/topics/media-pipeline.html#std:setting-FILES_STORE" target="_blank"><code>FILES_STORE</code></a>&#x548C;<a href="https://doc.scrapy.org/en/latest/topics/media-pipeline.html#std:setting-IMAGES_STORE" target="_blank"><code>IMAGES_STORE</code></a>&#x53EF;&#x4EE5;&#x4EE3;&#x8868;Amazon S3&#x5B58;&#x50A8;&#x6876;&#x3002;Scrapy&#x4F1A;&#x81EA;&#x52A8;&#x5C06;&#x6587;&#x4EF6;&#x4E0A;&#x4F20;&#x5230;&#x5B58;&#x50A8;&#x6876;&#x3002;</p>
+<p>&#x4F8B;&#x5982;&#xFF0C;&#x8FD9;&#x662F;&#x4E00;&#x4E2A;&#x6709;&#x6548;&#x7684;<a href="https://doc.scrapy.org/en/latest/topics/media-pipeline.html#std:setting-IMAGES_STORE" target="_blank"><code>IMAGES_STORE</code></a>&#x503C;&#xFF1A;</p>
+<pre><code>IMAGES_STORE = &apos;s3://bucket/images&apos;
+</code></pre><p>&#x60A8;&#x53EF;&#x4EE5;&#x4FEE;&#x6539;&#x7528;&#x4E8E;&#x5B58;&#x50A8;&#x6587;&#x4EF6;&#x7684;&#x8BBF;&#x95EE;&#x63A7;&#x5236;&#x5217;&#x8868;&#xFF08;ACL&#xFF09;&#x7B56;&#x7565;&#xFF0C;&#x8FD9;&#x662F;&#x7531;<a href="https://doc.scrapy.org/en/latest/topics/media-pipeline.html#std:setting-FILES_STORE_S3_ACL" target="_blank"><code>FILES_STORE_S3_ACL</code></a>&#x548C; <a href="https://doc.scrapy.org/en/latest/topics/media-pipeline.html#std:setting-IMAGES_STORE_S3_ACL" target="_blank"><code>IMAGES_STORE_S3_ACL</code></a>&#x8BBE;&#x7F6E;&#x5B9A;&#x4E49;&#x7684;&#x3002;&#x9ED8;&#x8BA4;&#x60C5;&#x51B5;&#x4E0B;&#xFF0C;ACL&#x88AB;&#x8BBE;&#x7F6E;&#x4E3A; <code>private</code>&#x3002;&#x8981;&#x4F7F;&#x6587;&#x4EF6;&#x516C;&#x5F00;&#x53EF;&#x7528;&#xFF0C;&#x8BF7;&#x4F7F;&#x7528;&#x4EE5;&#x4E0B;<code>public-read</code> &#x7B56;&#x7565;&#xFF1A;</p>
+<pre><code>IMAGES_STORE_S3_ACL = &apos;public-read&apos;
+</code></pre><p>&#x6709;&#x5173;&#x66F4;&#x591A;&#x4FE1;&#x606F;&#xFF0C;&#x8BF7;&#x53C2;&#x9605;Amazon S3&#x5F00;&#x53D1;&#x4EBA;&#x5458;&#x6307;&#x5357;&#x4E2D;&#x7684;<a href="https://docs.aws.amazon.com/AmazonS3/latest/dev/acl-overview.html#canned-acl" target="_blank">&#x9884;&#x88C5;ACL</a>&#x3002;</p>
+<h3 id="google&#x4E91;&#x7AEF;&#x5B58;&#x50A8;">Google&#x4E91;&#x7AEF;&#x5B58;&#x50A8;</h3>
+<p><a href="https://doc.scrapy.org/en/latest/topics/media-pipeline.html#std:setting-FILES_STORE" target="_blank"><code>FILES_STORE</code></a>&#x548C;<a href="https://doc.scrapy.org/en/latest/topics/media-pipeline.html#std:setting-IMAGES_STORE" target="_blank"><code>IMAGES_STORE</code></a>&#x53EF;&#x4EE5;&#x4EE3;&#x8868;Google&#x4E91;&#x5B58;&#x50A8;&#x5B58;&#x50A8;&#x5206;&#x533A;&#x3002;Scrapy&#x4F1A;&#x81EA;&#x52A8;&#x5C06;&#x6587;&#x4EF6;&#x4E0A;&#x4F20;&#x5230;&#x5B58;&#x50A8;&#x6876;&#x3002;&#xFF08;&#x9700;&#x8981;<a href="https://cloud.google.com/storage/docs/reference/libraries#client-libraries-install-python" target="_blank">&#x8C37;&#x6B4C;&#x4E91;&#x5B58;&#x50A8;</a>&#xFF09;</p>
+<p>&#x4F8B;&#x5982;&#xFF0C;&#x8FD9;&#x4E9B;&#x662F;&#x6709;&#x6548;&#x7684;<a href="https://doc.scrapy.org/en/latest/topics/media-pipeline.html#std:setting-IMAGES_STORE" target="_blank"><code>IMAGES_STORE</code></a>&#x548C;<a href="https://doc.scrapy.org/en/latest/topics/media-pipeline.html#std:setting-GCS_PROJECT_ID" target="_blank"><code>GCS_PROJECT_ID</code></a>&#x8BBE;&#x7F6E;&#xFF1A;</p>
+<pre><code>IMAGES_STORE = &apos;gs://bucket/images/&apos;
+GCS_PROJECT_ID = &apos;project_id&apos;
+</code></pre><p>&#x6709;&#x5173;&#x8EAB;&#x4EFD;&#x9A8C;&#x8BC1;&#x7684;&#x4FE1;&#x606F;&#xFF0C;&#x8BF7;&#x53C2;&#x9605;&#x6B64;<a href="https://cloud.google.com/docs/authentication/production" target="_blank">&#x6587;&#x6863;</a>&#x3002;</p>
+<p>&#x4E3A;&#x4E86;&#x9996;&#x5148;&#x4F7F;&#x7528;&#x5A92;&#x4F53;&#x7BA1;&#x9053;&#xFF0C;<a href="https://doc.scrapy.org/en/latest/topics/media-pipeline.html#topics-media-pipeline-enabling" target="_blank">&#x542F;&#x7528;&#x5B83;</a>&#x3002;</p>
+<p>&#x7136;&#x540E;&#xFF0C;&#x5982;&#x679C;spider&#x7528;URLs&#x952E;&#xFF08;<code>file_urls</code>&#x6216;&#x8005; <code>image_urls</code>&#x5206;&#x522B;&#x4E3A;&#x6587;&#x4EF6;&#x6216;&#x56FE;&#x50CF;&#x7BA1;&#x7EBF;&#xFF09;&#x8FD4;&#x56DE;&#x5B57;&#x5178;&#xFF0C;&#x7BA1;&#x9053;&#x5C06;&#x628A;&#x7ED3;&#x679C;&#x653E;&#x5728;&#x76F8;&#x5E94;&#x7684;&#x952E;&#xFF08;<code>files</code>&#x6216;<code>images</code>&#xFF09;&#x4E0B;&#x3002;</p>
+<p>&#x5982;&#x679C;&#x60A8;&#x66F4;&#x559C;&#x6B22;&#x4F7F;&#x7528;<a href="https://doc.scrapy.org/en/latest/topics/items.html#scrapy.item.Item" target="_blank"><code>Item</code></a>&#xFF0C;&#x90A3;&#x4E48;&#x4F7F;&#x7528;&#x5FC5;&#x8981;&#x7684;&#x5B57;&#x6BB5;&#x5B9A;&#x4E49;&#x4E00;&#x4E2A;&#x81EA;&#x5B9A;&#x4E49;&#x9879;&#x76EE;&#xFF0C;&#x4F8B;&#x5982;&#x56FE;&#x50CF;&#x7BA1;&#x9053;&#x7684;&#x793A;&#x4F8B;&#xFF1A;</p>
+<pre><code>import scrapy
+
+class MyItem(scrapy.Item):
+
+    # ... other item fields ...
+    image_urls = scrapy.Field()
+    images = scrapy.Field()
+</code></pre><p>&#x5982;&#x679C;&#x8981;&#x4E3A;URL&#x952E;&#x6216;&#x7ED3;&#x679C;&#x952E;&#x4F7F;&#x7528;&#x53E6;&#x4E00;&#x4E2A;&#x5B57;&#x6BB5;&#x540D;&#x79F0;&#xFF0C;&#x4E5F;&#x53EF;&#x4EE5;&#x8986;&#x76D6;&#x5B83;&#x3002;</p>
+<p>&#x5BF9;&#x4E8E;&#x6587;&#x4EF6;&#x7BA1;&#x9053;&#xFF0C;&#x8BBE;&#x7F6E;<a href="https://doc.scrapy.org/en/latest/topics/media-pipeline.html#std:setting-FILES_URLS_FIELD" target="_blank"><code>FILES_URLS_FIELD</code></a>&#x548C;/&#x6216; <a href="https://doc.scrapy.org/en/latest/topics/media-pipeline.html#std:setting-FILES_RESULT_FIELD" target="_blank"><code>FILES_RESULT_FIELD</code></a>&#x8BBE;&#x7F6E;&#xFF1A;</p>
+<pre><code>FILES_URLS_FIELD = &apos;field_name_for_your_files_urls&apos;
+FILES_RESULT_FIELD = &apos;field_name_for_your_processed_files&apos;
+</code></pre><p>&#x5BF9;&#x4E8E;&#x56FE;&#x50CF;&#x7BA1;&#x7EBF;&#xFF0C;&#x8BBE;&#x7F6E;<a href="https://doc.scrapy.org/en/latest/topics/media-pipeline.html#std:setting-IMAGES_URLS_FIELD" target="_blank"><code>IMAGES_URLS_FIELD</code></a>&#x548C;/&#x6216; <a href="https://doc.scrapy.org/en/latest/topics/media-pipeline.html#std:setting-IMAGES_RESULT_FIELD" target="_blank"><code>IMAGES_RESULT_FIELD</code></a>&#x8BBE;&#x7F6E;&#xFF1A;</p>
+<pre><code>IMAGES_URLS_FIELD = &apos;field_name_for_your_images_urls&apos;
+IMAGES_RESULT_FIELD = &apos;field_name_for_your_processed_images&apos;
+</code></pre><p>&#x5982;&#x679C;&#x60A8;&#x9700;&#x8981;&#x66F4;&#x590D;&#x6742;&#x7684;&#x5185;&#x5BB9;&#x5E76;&#x5E0C;&#x671B;&#x8986;&#x76D6;&#x81EA;&#x5B9A;&#x4E49;&#x7BA1;&#x9053;&#x884C;&#x4E3A;&#xFF0C;&#x8BF7;&#x53C2;&#x9605;<a href="https://doc.scrapy.org/en/latest/topics/media-pipeline.html#topics-media-pipeline-override" target="_blank">&#x6269;&#x5C55;&#x4ECB;&#x8D28;&#x7BA1;&#x9053;</a>&#x3002;</p>
+<p>&#x5982;&#x679C;&#x60A8;&#x6709;&#x591A;&#x4E2A;&#x56FE;&#x50CF;&#x7BA1;&#x9053;&#x4ECE;ImagePipeline&#x7EE7;&#x627F;&#xFF0C;&#x5E76;&#x4E14;&#x60A8;&#x5E0C;&#x671B;&#x5728;&#x4E0D;&#x540C;&#x7BA1;&#x9053;&#x4E2D;&#x5177;&#x6709;&#x4E0D;&#x540C;&#x7684;&#x8BBE;&#x7F6E;&#xFF0C;&#x5219;&#x53EF;&#x4EE5;&#x8BBE;&#x7F6E;&#x4EE5;&#x7BA1;&#x9053;&#x7C7B;&#x7684;&#x5927;&#x5199;&#x540D;&#x79F0;&#x5F00;&#x5934;&#x7684;&#x8BBE;&#x7F6E;&#x952E;&#x3002;&#x4F8B;&#x5982;&#xFF0C;&#x5982;&#x679C;&#x60A8;&#x7684;&#x7BA1;&#x9053;&#x88AB;&#x79F0;&#x4E3A;MyPipeline&#xFF0C;&#x5E76;&#x4E14;&#x60A8;&#x60F3;&#x5B9A;&#x5236;IMAGES_URLS_FIELD&#xFF0C;&#x5219;&#x53EF;&#x4EE5;&#x5B9A;&#x4E49;&#x8BBE;&#x7F6E;MYPIPELINE_IMAGES_URLS_FIELD&#x5E76;&#x4F7F;&#x7528;&#x60A8;&#x7684;&#x81EA;&#x5B9A;&#x4E49;&#x8BBE;&#x7F6E;&#x3002;</p>
+<h2 id="&#x9644;&#x52A0;&#x529F;&#x80FD;">&#x9644;&#x52A0;&#x529F;&#x80FD;</h2>
+<h3 id="&#x6587;&#x4EF6;&#x5230;&#x671F;">&#x6587;&#x4EF6;&#x5230;&#x671F;</h3>
+<p>&#x56FE;&#x50CF;&#x7BA1;&#x9053;&#x907F;&#x514D;&#x4E86;&#x4E0B;&#x8F7D;&#x6700;&#x8FD1;&#x4E0B;&#x8F7D;&#x7684;&#x6587;&#x4EF6;&#x3002;&#x8981;&#x8C03;&#x6574;&#x6B64;&#x4FDD;&#x7559;&#x5EF6;&#x8FDF;&#xFF0C;&#x8BF7;&#x4F7F;&#x7528;<a href="https://doc.scrapy.org/en/latest/topics/media-pipeline.html#std:setting-FILES_EXPIRES" target="_blank"><code>FILES_EXPIRES</code></a>&#x8BBE;&#x7F6E;&#xFF08;&#x6216;&#x8005; <a href="https://doc.scrapy.org/en/latest/topics/media-pipeline.html#std:setting-IMAGES_EXPIRES" target="_blank"><code>IMAGES_EXPIRES</code></a>&#x5728;&#x56FE;&#x50CF;&#x7BA1;&#x9053;&#x7684;&#x60C5;&#x51B5;&#x4E0B;&#xFF09;&#xFF0C;&#x8BE5;&#x8BBE;&#x7F6E;&#x6307;&#x5B9A;&#x5EF6;&#x8FDF;&#x5929;&#x6570;&#xFF1A;</p>
+<pre><code># 120 days of delay for files expiration
+FILES_EXPIRES = 120
+
+# 30 days of delay for images expiration
+IMAGES_EXPIRES = 30
+</code></pre><p>&#x8FD9;&#x4E24;&#x4E2A;&#x8BBE;&#x7F6E;&#x7684;&#x9ED8;&#x8BA4;&#x503C;&#x662F;90&#x5929;&#x3002;</p>
+<p>&#x5982;&#x679C;&#x4F60;&#x6709;&#x7BA1;&#x9053;&#x7684;&#x5B50;&#x7C7B;FilesPipeline&#xFF0C;&#x4F60;&#x60F3;&#x6709;&#x4E0D;&#x540C;&#x7684;&#x8BBE;&#x7F6E;&#xFF0C;&#x4F60;&#x53EF;&#x4EE5;&#x8BBE;&#x7F6E;&#x4EE5;&#x5927;&#x5199;&#x7684;&#x7C7B;&#x540D;&#x5F00;&#x5934;&#x7684;&#x8BBE;&#x7F6E;&#x952E;&#x3002;&#x4F8B;&#x5982;&#xFF0C;&#x7ED9;&#x5B9A;&#x7BA1;&#x9053;&#x7C7B;&#x540D;&#x4E3A;MyPipeline&#xFF0C;&#x60A8;&#x53EF;&#x4EE5;&#x8BBE;&#x7F6E;&#x8BBE;&#x7F6E;&#x952E;&#xFF1A;</p>
+<p>MYPIPELINE_FILES_EXPIRES = 180</p>
+<p>&#x5E76;&#x4E14;&#x7BA1;&#x9053;&#x7C7B;MyPipeline&#x5C06;&#x5230;&#x671F;&#x65F6;&#x95F4;&#x8BBE;&#x7F6E;&#x4E3A;180&#x3002;</p>
+<h3 id="&#x4E3A;&#x56FE;&#x50CF;&#x751F;&#x6210;&#x7F29;&#x7565;&#x56FE;">&#x4E3A;&#x56FE;&#x50CF;&#x751F;&#x6210;&#x7F29;&#x7565;&#x56FE;</h3>
+<p>&#x56FE;&#x50CF;&#x7BA1;&#x9053;&#x53EF;&#x4EE5;&#x81EA;&#x52A8;&#x521B;&#x5EFA;&#x4E0B;&#x8F7D;&#x56FE;&#x50CF;&#x7684;&#x7F29;&#x7565;&#x56FE;&#x3002;</p>
+<p>&#x4E3A;&#x4E86;&#x4F7F;&#x7528;&#x6B64;&#x529F;&#x80FD;&#xFF0C;&#x60A8;&#x5FC5;&#x987B;&#x8BBE;&#x7F6E;<a href="https://doc.scrapy.org/en/latest/topics/media-pipeline.html#std:setting-IMAGES_THUMBS" target="_blank"><code>IMAGES_THUMBS</code></a>&#x4E00;&#x4E2A;&#x5B57;&#x5178;&#xFF0C;&#x5176;&#x4E2D;&#x7684;&#x952E;&#x662F;&#x7F29;&#x7565;&#x56FE;&#x540D;&#x79F0;&#xFF0C;&#x503C;&#x662F;&#x5B83;&#x4EEC;&#x7684;&#x5C3A;&#x5BF8;&#x3002;</p>
+<p>&#x4F8B;&#x5982;&#xFF1A;</p>
+<pre><code>IMAGES_THUMBS = {
+    &apos;small&apos;: (50, 50),
+    &apos;big&apos;: (270, 270),
+}
+</code></pre><p>&#x5F53;&#x60A8;&#x4F7F;&#x7528;&#x6B64;&#x529F;&#x80FD;&#x65F6;&#xFF0C;&#x56FE;&#x50CF;&#x7BA1;&#x9053;&#x5C06;&#x4F7F;&#x7528;&#x4EE5;&#x4E0B;&#x683C;&#x5F0F;&#x521B;&#x5EFA;&#x6BCF;&#x4E2A;&#x6307;&#x5B9A;&#x5C3A;&#x5BF8;&#x7684;&#x7F29;&#x7565;&#x56FE;&#xFF1A;</p>
+<pre><code>&lt;IMAGES_STORE&gt;/thumbs/&lt;size_name&gt;/&lt;image_id&gt;.jpg
+</code></pre><p>&#x54EA;&#x91CC;&#xFF1A;</p>
+<ul>
+<li><code>&lt;size_name&gt;</code>&#x662F;&#x5728;&#x6307;&#x5B9A;&#x7684;<a href="https://doc.scrapy.org/en/latest/topics/media-pipeline.html#std:setting-IMAGES_THUMBS" target="_blank"><code>IMAGES_THUMBS</code></a> &#x5B57;&#x5178;&#x952E;&#xFF08;<code>small</code>&#xFF0C;<code>big</code>&#x7B49;&#xFF09;</li>
+<li><code>&lt;image_id&gt;</code>&#x662F;&#x56FE;&#x7247;&#x7F51;&#x5740;&#x7684;<a href="https://en.wikipedia.org/wiki/SHA_hash_functions" target="_blank">SHA1&#x54C8;&#x5E0C;&#x503C;</a></li>
+</ul>
+<p>&#x4F7F;&#x7528;<code>small</code>&#x548C;<code>big</code>&#x7F29;&#x7565;&#x56FE;&#x540D;&#x79F0;&#x5B58;&#x50A8;&#x7684;&#x56FE;&#x50CF;&#x6587;&#x4EF6;&#x793A;&#x4F8B;&#xFF1A;</p>
+<pre><code>&lt;IMAGES_STORE&gt;/full/63bbfea82b8880ed33cdb762aa11fab722a90a24.jpg
+&lt;IMAGES_STORE&gt;/thumbs/small/63bbfea82b8880ed33cdb762aa11fab722a90a24.jpg
+&lt;IMAGES_STORE&gt;/thumbs/big/63bbfea82b8880ed33cdb762aa11fab722a90a24.jpg
+</code></pre><p>&#x7B2C;&#x4E00;&#x4E2A;&#x662F;&#x4ECE;&#x7F51;&#x7AD9;&#x4E0B;&#x8F7D;&#x7684;&#x5B8C;&#x6574;&#x56FE;&#x50CF;&#x3002;</p>
+<h3 id="&#x8FC7;&#x6EE4;&#x6389;&#x5C0F;&#x56FE;&#x7247;">&#x8FC7;&#x6EE4;&#x6389;&#x5C0F;&#x56FE;&#x7247;</h3>
+<p>&#x4F7F;&#x7528;&#x56FE;&#x50CF;&#x7BA1;&#x7EBF;&#x65F6;&#xFF0C;&#x53EF;&#x4EE5;&#x901A;&#x8FC7;&#x6307;&#x5B9A;<a href="https://doc.scrapy.org/en/latest/topics/media-pipeline.html#std:setting-IMAGES_MIN_HEIGHT" target="_blank"><code>IMAGES_MIN_HEIGHT</code></a>&#x548C; <a href="https://doc.scrapy.org/en/latest/topics/media-pipeline.html#std:setting-IMAGES_MIN_WIDTH" target="_blank"><code>IMAGES_MIN_WIDTH</code></a>&#x8BBE;&#x7F6E;&#x4E2D;&#x5141;&#x8BB8;&#x7684;&#x6700;&#x5C0F;&#x5C3A;&#x5BF8;&#x6765;&#x653E;&#x7F6E;&#x592A;&#x5C0F;&#x7684;&#x56FE;&#x50CF;&#x3002;</p>
+<p>&#x4F8B;&#x5982;&#xFF1A;</p>
+<pre><code>IMAGES_MIN_HEIGHT = 110 
+IMAGES_MIN_WIDTH = 110
+</code></pre><p>&#x6CE8;&#x610F;</p>
+<p>&#x5927;&#x5C0F;&#x9650;&#x5236;&#x5B8C;&#x5168;&#x4E0D;&#x5F71;&#x54CD;&#x7F29;&#x7565;&#x56FE;&#x751F;&#x6210;&#x3002;</p>
+<p>&#x53EF;&#x4EE5;&#x53EA;&#x8BBE;&#x7F6E;&#x4E00;&#x4E2A;&#x5C3A;&#x5BF8;&#x7EA6;&#x675F;&#x6216;&#x8005;&#x4E24;&#x8005;&#x517C;&#x6709;&#x3002;&#x8BBE;&#x7F6E;&#x5B83;&#x4EEC;&#x65F6;&#xFF0C;&#x53EA;&#x4F1A;&#x4FDD;&#x5B58;&#x540C;&#x65F6;&#x6EE1;&#x8DB3;&#x6700;&#x5C0F;&#x5C3A;&#x5BF8;&#x7684;&#x56FE;&#x50CF;&#x3002;&#x5BF9;&#x4E8E;&#x4E0A;&#x8FF0;&#x793A;&#x4F8B;&#xFF0C;&#x5927;&#x5C0F;&#xFF08;105 x 105&#xFF09;&#x6216;&#xFF08;105 x 200&#xFF09;&#x6216;&#xFF08;200 x 105&#xFF09;&#x7684;&#x56FE;&#x50CF;&#x5C06;&#x5168;&#x90E8;&#x88AB;&#x5220;&#x9664;&#xFF0C;&#x56E0;&#x4E3A;&#x81F3;&#x5C11;&#x4E00;&#x4E2A;&#x7EF4;&#x5EA6;&#x6BD4;&#x7EA6;&#x675F;&#x66F4;&#x77ED;&#x3002;</p>
+<p>&#x9ED8;&#x8BA4;&#x60C5;&#x51B5;&#x4E0B;&#xFF0C;&#x6CA1;&#x6709;&#x5927;&#x5C0F;&#x9650;&#x5236;&#xFF0C;&#x56E0;&#x6B64;&#x6240;&#x6709;&#x56FE;&#x50CF;&#x90FD;&#x88AB;&#x5904;&#x7406;&#x3002;</p>
+<h3 id="&#x5141;&#x8BB8;&#x91CD;&#x5B9A;&#x5411;">&#x5141;&#x8BB8;&#x91CD;&#x5B9A;&#x5411;</h3>
+<p>&#x9ED8;&#x8BA4;&#x60C5;&#x51B5;&#x4E0B;&#xFF0C;&#x5A92;&#x4F53;&#x7BA1;&#x9053;&#x5FFD;&#x7565;&#x91CD;&#x5B9A;&#x5411;&#xFF0C;&#x5373;&#x5BF9;&#x5A92;&#x4F53;&#x6587;&#x4EF6;URL&#x8BF7;&#x6C42;&#x7684;HTTP&#x91CD;&#x5B9A;&#x5411;&#x610F;&#x5473;&#x7740;&#x5A92;&#x4F53;&#x4E0B;&#x8F7D;&#x88AB;&#x8BA4;&#x4E3A;&#x5931;&#x8D25;&#x3002;</p>
+<p>&#x8981;&#x5904;&#x7406;&#x5A92;&#x4F53;&#x91CD;&#x5B9A;&#x5411;&#xFF0C;&#x8BF7;&#x5C06;&#x6B64;&#x8BBE;&#x7F6E;&#x8BBE;&#x7F6E;&#x4E3A;<code>True</code>&#xFF1A;</p>
+<pre><code>MEDIA_ALLOW_REDIRECTS = True
+</code></pre><h2 id="&#x6269;&#x5C55;&#x5A92;&#x4F53;&#x7BA1;&#x9053;">&#x6269;&#x5C55;&#x5A92;&#x4F53;&#x7BA1;&#x9053;</h2>
+<p>&#x5728;&#x8FD9;&#x91CC;&#x770B;&#x5230;&#x4F60;&#x53EF;&#x4EE5;&#x5728;&#x81EA;&#x5B9A;&#x4E49;&#x6587;&#x4EF6;&#x7BA1;&#x9053;&#x4E2D;&#x8986;&#x76D6;&#x7684;&#x65B9;&#x6CD5;&#xFF1A;</p>
+<p><em>class</em><code>scrapy.pipelines.files.``FilesPipeline</code></p>
+<ul>
+<li><p><code>get_media_requests</code>(<em>item</em>, <em>info</em>)</p>
+<p>&#x5982;&#x5DE5;&#x4F5C;&#x6D41;&#x7A0B;&#x6240;&#x793A;&#xFF0C;&#x7BA1;&#x9053;&#x5C06;&#x83B7;&#x53D6;&#x8981;&#x4ECE;&#x9879;&#x76EE;&#x4E0B;&#x8F7D;&#x7684;&#x56FE;&#x50CF;&#x7684;URL&#x3002;&#x4E3A;&#x4E86;&#x505A;&#x5230;&#x8FD9;&#x4E00;&#x70B9;&#xFF0C;&#x60A8;&#x53EF;&#x4EE5;&#x8986;&#x76D6;&#x8BE5; <a href="https://doc.scrapy.org/en/latest/topics/media-pipeline.html#scrapy.pipelines.files.FilesPipeline.get_media_requests" target="_blank"><code>get_media_requests()</code></a>&#x65B9;&#x6CD5;&#x5E76;&#x4E3A;&#x6BCF;&#x4E2A;&#x6587;&#x4EF6;URL&#x8FD4;&#x56DE;&#x4E00;&#x4E2A;&#x8BF7;&#x6C42;&#xFF1A;</p>
+<pre><code>def get_media_requests(self, item, info):
+    for file_url in item[&apos;file_urls&apos;]:
+        yield scrapy.Request(file_url)
+</code></pre></li>
+</ul>
+<p>&#x8FD9;&#x4E9B;&#x8BF7;&#x6C42;&#x5C06;&#x7531;&#x7BA1;&#x9053;&#x5904;&#x7406;&#xFF0C;&#x5E76;&#x4E14;&#x5F53;&#x5B83;&#x4EEC;&#x5B8C;&#x6210;&#x4E0B;&#x8F7D;&#x65F6;&#xFF0C;&#x7ED3;&#x679C;&#x5C06;&#x4F1A;&#x4F5C;&#x4E3A;2-element&#x5143;&#x7956;&#x7684;&#x5217;&#x8868;&#x53D1;&#x9001;&#x5230;<a href="https://doc.scrapy.org/en/1.5/topics/media-pipeline.html#scrapy.pipelines.files.FilesPipeline.item_completed" target="_blank"><code>item_completed()</code></a>&#x3002;&#x6BCF;&#x4E2A;&#x5143;&#x7EC4;&#x5C06;&#x5305;&#x542B;&#x4EE5;&#x4E0B;&#x5185;&#x5BB9;&#xFF1A;<code>(success, file_info_or_error)</code></p>
+<ul>
+<li><code>success</code>&#x662F;&#x4E00;&#x4E2A;&#x5E03;&#x5C14;&#x503C;&#xFF0C;&#x5982;&#x679C;&#x56FE;&#x50CF;&#x4E0B;&#x8F7D;&#x6210;&#x529F;&#x5219;&#x8FD4;&#x56DE;<code>True</code> &#x7531;&#x4E8E;&#x67D0;&#x79CD;&#x539F;&#x56E0;&#x5931;&#x8D25;&#x4E86;&#x8FD4;&#x56DE;<code>False</code></li>
+<li><code>file_info_or_error</code>&#x662F;&#x4E00;&#x4E2A;&#x5305;&#x542B;&#x4EE5;&#x4E0B;&#x952E;&#xFF08;&#x5982;&#x679C;&#x6210;&#x529F;&#x8FD4;&#x56DE;<code>Ture</code> &#xFF09;&#x7684;&#x5B57;&#x5178;&#xFF0C;&#x6216;&#x8005;&#x5982;&#x679C;&#x51FA;&#x73B0;&#x4E86;&#x95EE;&#x9898;&#xFF0C;&#x5219;&#x662F; <a href="https://twistedmatrix.com/documents/current/api/twisted.python.failure.Failure.html" target="_blank">Twisted Failure</a><ul>
+<li><code>url</code> - &#x6587;&#x4EF6;&#x7684;&#x4E0B;&#x8F7D;&#x5730;&#x5740;&#x3002;&#x8FD9;&#x662F;&#x4ECE;<a href="https://doc.scrapy.org/en/latest/topics/media-pipeline.html#scrapy.pipelines.files.FilesPipeline.get_media_requests" target="_blank"><code>get_media_requests()</code></a> &#x65B9;&#x6CD5;&#x8FD4;&#x56DE;&#x7684;&#x8BF7;&#x6C42;&#x7684;url &#x3002;</li>
+<li><code>path</code>- <a href="https://doc.scrapy.org/en/latest/topics/media-pipeline.html#std:setting-FILES_STORE" target="_blank"><code>FILES_STORE</code></a>&#x6587;&#x4EF6;&#x5B58;&#x50A8;&#x4F4D;&#x7F6E;&#x7684;&#x8DEF;&#x5F84;&#xFF08;&#x76F8;&#x5BF9;&#x4E8E;&#xFF09;</li>
+<li><code>checksum</code>- &#x56FE;&#x50CF;&#x5185;&#x5BB9;&#x7684;<a href="https://en.wikipedia.org/wiki/MD5" target="_blank">MD5&#x54C8;&#x5E0C;</a></li>
+</ul>
+</li>
+</ul>
+<p>&#x63A5;&#x6536;&#x5230;&#x7684;&#x5143;&#x7EC4;&#x5217;&#x8868;<a href="https://doc.scrapy.org/en/latest/topics/media-pipeline.html#scrapy.pipelines.files.FilesPipeline.item_completed" target="_blank"><code>item_completed()</code></a>&#x4FDD;&#x8BC1;&#x4FDD;&#x6301;&#x4ECE;&#x8BE5;<a href="https://doc.scrapy.org/en/latest/topics/media-pipeline.html#scrapy.pipelines.files.FilesPipeline.get_media_requests" target="_blank"><code>get_media_requests()</code></a>&#x65B9;&#x6CD5;&#x8FD4;&#x56DE;&#x7684;&#x8BF7;&#x6C42;&#x7684;&#x76F8;&#x540C;&#x987A;&#x5E8F; &#x3002;</p>
+<p>&#x8FD9;&#x662F;&#x4E00;&#x4E2A;&#x5178;&#x578B;&#x7684;<code>results</code>&#x53C2;&#x6570;&#x503C;&#xFF1A;</p>
+<pre><code>[(True,
+  {&apos;checksum&apos;: &apos;2b00042f7481c7b056c4b410d28f33cf&apos;,
+   &apos;path&apos;: &apos;full/7d97e98f8af710c7e7fe703abc8f639e0ee507c4.jpg&apos;,
+   &apos;url&apos;: &apos;http://www.example.com/images/product1.jpg&apos;}),
+ (True,
+  {&apos;checksum&apos;: &apos;b9628c4ab9b595f72f280b90c4fd093d&apos;,
+   &apos;path&apos;: &apos;full/1ca5879492b8fd606df1964ea3c1e2f4520f076f.jpg&apos;,
+   &apos;url&apos;: &apos;http://www.example.com/images/product2.jpg&apos;}),
+ (False,
+  Failure(...))]
+</code></pre><p>&#x9ED8;&#x8BA4;&#x60C5;&#x51B5;&#x4E0B;&#xFF0C;&#x8BE5;<a href="https://doc.scrapy.org/en/latest/topics/media-pipeline.html#scrapy.pipelines.files.FilesPipeline.get_media_requests" target="_blank"><code>get_media_requests()</code></a>&#x65B9;&#x6CD5;&#x8FD4;&#x56DE;<code>None</code>&#xFF0C;&#x8FD9;&#x610F;&#x5473;&#x7740;&#x6CA1;&#x6709;&#x6587;&#x4EF6;&#x8981;&#x4E0B;&#x8F7D;&#x7684;&#x9879;&#x76EE;&#x3002;</p>
+<p><code>item_completed</code>(<em>results</em>, <em>items</em>, <em>info</em>)</p>
+<p><a href="https://doc.scrapy.org/en/latest/topics/media-pipeline.html#scrapy.pipelines.files.FilesPipeline.item_completed" target="_blank"><code>FilesPipeline.item_completed()</code></a>&#x5F53;&#x5355;&#x4E2A;&#x9879;&#x76EE;&#x7684;&#x6240;&#x6709;&#x6587;&#x4EF6;&#x8BF7;&#x6C42;&#x90FD;&#x5DF2;&#x5B8C;&#x6210;&#xFF08;&#x5B8C;&#x6210;&#x4E0B;&#x8F7D;&#x6216;&#x7531;&#x4E8E;&#x67D0;&#x79CD;&#x539F;&#x56E0;&#x5931;&#x8D25;&#xFF09;&#x65F6;&#x8C03;&#x7528;&#x6B64;&#x65B9;&#x6CD5;&#x3002;</p>
+<p>&#x8BE5;<a href="https://doc.scrapy.org/en/latest/topics/media-pipeline.html#scrapy.pipelines.files.FilesPipeline.item_completed" target="_blank"><code>item_completed()</code></a>&#x65B9;&#x6CD5;&#x5FC5;&#x987B;&#x8FD4;&#x56DE;&#x5C06;&#x53D1;&#x9001;&#x5230;&#x540E;&#x7EED;&#x9879;&#x76EE;&#x7BA1;&#x9053;&#x9636;&#x6BB5;&#x7684;&#x8F93;&#x51FA;&#xFF0C;&#x56E0;&#x6B64;&#x60A8;&#x5FC5;&#x987B;&#x8FD4;&#x56DE;&#xFF08;&#x6216;&#x4E22;&#x5F03;&#xFF09;&#x8BE5;&#x9879;&#x76EE;&#xFF0C;&#x5C31;&#x50CF;&#x5728;&#x4EFB;&#x4F55;&#x7BA1;&#x9053;&#x4E2D;&#x4E00;&#x6837;&#x3002;</p>
+<p>&#x4EE5;&#x4E0B;&#x662F;<a href="https://doc.scrapy.org/en/latest/topics/media-pipeline.html#scrapy.pipelines.files.FilesPipeline.item_completed" target="_blank"><code>item_completed()</code></a>&#x6211;&#x4EEC;&#x5C06;&#x4E0B;&#x8F7D;&#x7684;&#x6587;&#x4EF6;&#x8DEF;&#x5F84;&#xFF08;&#x4F20;&#x9012;&#x5230;&#x7ED3;&#x679C;&#x4E2D;&#xFF09;&#x5B58;&#x50A8;&#x5728;<code>file_paths</code> &#x9879;&#x76EE;&#x5B57;&#x6BB5;&#x4E2D;&#x7684;&#x65B9;&#x6CD5;&#x793A;&#x4F8B;&#xFF0C;&#x5982;&#x679C;&#x9879;&#x76EE;&#x4E0D;&#x5305;&#x542B;&#x4EFB;&#x4F55;&#x6587;&#x4EF6;&#xFF0C;&#x6211;&#x4EEC;&#x5C06;&#x5220;&#x9664;&#x8BE5;&#x9879;&#x76EE;&#xFF1A;</p>
+<pre><code>from scrapy.exceptions import DropItem
+
+def item_completed(self, results, item, info):
+    image_paths = [x[&apos;path&apos;] for ok, x in results if ok]
+    if not image_paths:
+        raise DropItem(&quot;Item contains no images&quot;)
+    item[&apos;image_paths&apos;] = image_paths
+    return item
+</code></pre><p>  &#x9ED8;&#x8BA4;&#x60C5;&#x51B5;&#x4E0B;&#xFF0C;&#x8BE5;<a href="https://doc.scrapy.org/en/latest/topics/media-pipeline.html#scrapy.pipelines.files.FilesPipeline.item_completed" target="_blank"><code>item_completed()</code></a>&#x65B9;&#x6CD5;&#x8FD4;&#x56DE;&#x8BE5;&#x9879;&#x76EE;&#x3002;</p>
+<p>&#x5728;&#x8FD9;&#x91CC;&#x770B;&#x5230;&#x60A8;&#x53EF;&#x4EE5;&#x5728;&#x81EA;&#x5B9A;&#x4E49;&#x56FE;&#x50CF;&#x7BA1;&#x9053;&#x4E2D;&#x8986;&#x76D6;&#x7684;&#x65B9;&#x6CD5;&#xFF1A;</p>
+<p><em>class</em><code>scrapy.contrib.pipeline.images.ImagesPipeline</code></p>
+<p>&#x200B;    &#x8FD9;<a href="https://doc.scrapy.org/en/latest/topics/media-pipeline.html#scrapy.pipelines.images.ImagesPipeline" target="_blank"><code>ImagesPipeline</code></a>&#x662F;<code>FilesPipeline</code>&#x5BF9;&#x5B57;&#x6BB5;&#x540D;&#x79F0;&#x8FDB;&#x884C;&#x81EA;&#x5B9A;&#x4E49;&#x5E76;&#x4E3A;&#x56FE;&#x50CF;&#x6DFB;&#x52A0;&#x81EA;&#x5B9A;&#x4E49;&#x884C;&#x4E3A;&#x7684;&#x6269;&#x5C55;&#x3002;</p>
+<p>&#x200B;    <code>get_media_requests</code>&#xFF08;<em>item</em>&#xFF0C;<em>info</em> &#xFF09;</p>
+<p>&#x200B;        &#x4EE5;&#x4E0E;&#x65B9;&#x6CD5;&#x76F8;&#x540C;&#x7684;&#x65B9;&#x5F0F;&#x5DE5;&#x4F5C;<code>FilesPipeline.get_media_requests()</code>&#xFF0C;&#x4F46;&#x5BF9;&#x56FE;&#x50CF;&#x7F51;&#x5740;&#x4F7F;&#x7528;&#x4E0D;&#x540C;&#x7684;&#x5B57;&#x6BB5;&#x540D;&#x79F0;&#x3002;</p>
+<p>&#x200B;        &#x5FC5;&#x987B;&#x4E3A;&#x6BCF;&#x4E2A;&#x56FE;&#x7247;&#x7F51;&#x5740;&#x8FD4;&#x56DE;&#x4E00;&#x4E2A;&#x8BF7;&#x6C42;&#x3002;</p>
+<p>&#x200B;    <code>item_completed</code>(<em>results</em>, <em>item</em>, <em>info</em>)</p>
+<p>&#x200B;        <a href="https://doc.scrapy.org/en/latest/topics/media-pipeline.html#scrapy.pipelines.images.ImagesPipeline.item_completed" target="_blank"><code>ImagesPipeline.item_completed()</code></a>&#x5F53;&#x5355;&#x4E2A;&#x9879;&#x76EE;&#x7684;&#x6240;&#x6709;&#x56FE;&#x50CF;&#x8BF7;&#x6C42;&#x90FD;&#x5DF2;&#x5B8C;&#x6210;&#xFF08;&#x5B8C;&#x6210;&#x4E0B;&#x8F7D;&#x6216;&#x7531;&#x4E8E;&#x67D0;&#x79CD;&#x539F;&#x56E0;&#x5931;&#x8D25;&#xFF09;&#x65F6;&#x8C03;&#x7528;&#x6B64;&#x65B9;&#x6CD5;&#x3002;</p>
+<p>&#x200B;        &#x4EE5;&#x4E0E;&#x65B9;&#x6CD5;&#x76F8;&#x540C;&#x7684;&#x65B9;&#x5F0F;&#x5DE5;&#x4F5C;<code>FilesPipeline.item_completed()</code>&#xFF0C;&#x4F46;&#x4F7F;&#x7528;&#x4E0D;&#x540C;&#x7684;&#x5B57;&#x6BB5;&#x540D;&#x79F0;&#x6765;&#x5B58;&#x50A8;&#x56FE;&#x50CF;&#x4E0B;&#x8F7D;&#x7ED3;&#x679C;&#x3002;</p>
+<p>&#x200B;        &#x9ED8;&#x8BA4;&#x60C5;&#x51B5;&#x4E0B;&#xFF0C;&#x8BE5;<a href="https://doc.scrapy.org/en/latest/topics/media-pipeline.html#scrapy.pipelines.images.ImagesPipeline.item_completed" target="_blank"><code>item_completed()</code></a>&#x65B9;&#x6CD5;&#x8FD4;&#x56DE;&#x8BE5;&#x9879;&#x76EE;&#x3002;</p>
+<h2 id="&#x81EA;&#x5B9A;&#x4E49;&#x56FE;&#x50CF;&#x7BA1;&#x9053;&#x793A;&#x4F8B;">&#x81EA;&#x5B9A;&#x4E49;&#x56FE;&#x50CF;&#x7BA1;&#x9053;&#x793A;&#x4F8B;</h2>
+<p>&#x4E0B;&#x9762;&#x662F;&#x56FE;&#x50CF;&#x7BA1;&#x9053;&#x7684;&#x5B8C;&#x6574;&#x793A;&#x4F8B;&#xFF0C;&#x5176;&#x793A;&#x4F8B;&#x65B9;&#x6CD5;&#x5982;&#x4E0A;&#x6240;&#x793A;&#xFF1A;</p>
+<pre><code>import scrapy
+from scrapy.pipelines.images import ImagesPipeline
+from scrapy.exceptions import DropItem
+
+class MyImagesPipeline(ImagesPipeline):
+
+    def get_media_requests(self, item, info):
+        for image_url in item[&apos;image_urls&apos;]:
+            yield scrapy.Request(image_url)
+
+    def item_completed(self, results, item, info):
+        image_paths = [x[&apos;path&apos;] for ok, x in results if ok]
+        if not image_paths:
+            raise DropItem(&quot;Item contains no images&quot;)
+        item[&apos;image_paths&apos;] = image_paths
+        return item
+</code></pre>
+                                
+                                </section>
+                            
+    </div>
+    <div class="search-results">
+        <div class="has-results">
+            
+            <h1 class="search-results-title"><span class='search-results-count'></span> results matching "<span class='search-query'></span>"</h1>
+            <ul class="search-results-list"></ul>
+            
+        </div>
+        <div class="no-results">
+            
+            <h1 class="search-results-title">No results matching "<span class='search-query'></span>"</h1>
+            
+        </div>
+    </div>
+</div>
+
+                        </div>
+                    </div>
+                
+            </div>
+
+            
+                
+                <a href="Debugging memory leaks.html" class="navigation navigation-prev " aria-label="Previous page: 调试内存溢出">
+                    <i class="fa fa-angle-left"></i>
+                </a>
+                
+                
+                <a href="Deploying Spiders.html" class="navigation navigation-next " aria-label="Next page: 部署爬虫">
+                    <i class="fa fa-angle-right"></i>
+                </a>
+                
+            
+        
+    </div>
+
+    <script>
+        var gitbook = gitbook || [];
+        gitbook.push(function() {
+            gitbook.page.hasChanged({"page":{"title":"下载和处理文件和图片","level":"1.5.9","depth":2,"next":{"title":"部署爬虫","level":"1.5.10","depth":2,"path":"4.SOLVING SPECIFIC PROBLEMS/Deploying Spiders.md","ref":"4.SOLVING SPECIFIC PROBLEMS/Deploying Spiders.md","articles":[]},"previous":{"title":"调试内存溢出","level":"1.5.8","depth":2,"path":"4.SOLVING SPECIFIC PROBLEMS/Debugging memory leaks.md","ref":"4.SOLVING SPECIFIC PROBLEMS/Debugging memory leaks.md","articles":[]},"dir":"ltr"},"config":{"gitbook":"*","theme":"default","variables":{},"plugins":[],"pluginsConfig":{"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"}},"file":{"path":"4.SOLVING SPECIFIC PROBLEMS/Downloading and processing files and images.md","mtime":"2018-04-30T14:01:32.000Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2018-05-08T09:17:40.626Z"},"basePath":"..","book":{"language":""}});
+        });
+    </script>
+</div>
+
+        
+    <script src="../gitbook/gitbook.js"></script>
+    <script src="../gitbook/theme.js"></script>
+    
+        
+        <script src="../gitbook/gitbook-plugin-search/search-engine.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-search/search.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-lunr/lunr.min.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-lunr/search-lunr.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-sharing/buttons.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-fontsettings/fontsettings.js"></script>
+        
+    
+
+    </body>
+</html>
+

@@ -1,0 +1,905 @@
+
+<!DOCTYPE HTML>
+<html lang="" >
+    <head>
+        <meta charset="UTF-8">
+        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+        <title>发送邮件 · GitBook</title>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="description" content="">
+        <meta name="generator" content="GitBook 3.2.3">
+        
+        
+        
+    
+    <link rel="stylesheet" href="../gitbook/style.css">
+
+    
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-highlight/website.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-search/search.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-fontsettings/website.css">
+                
+            
+        
+
+    
+
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+
+        
+    
+    
+    <meta name="HandheldFriendly" content="true"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <link rel="apple-touch-icon-precomposed" sizes="152x152" href="../gitbook/images/apple-touch-icon-precomposed-152.png">
+    <link rel="shortcut icon" href="../gitbook/images/favicon.ico" type="image/x-icon">
+
+    
+    <link rel="next" href="Telnet Console.html" />
+    
+    
+    <link rel="prev" href="Stats Collection.html" />
+    
+
+    </head>
+    <body>
+        
+<div class="book">
+    <div class="book-summary">
+        
+            
+<div id="book-search-input" role="search">
+    <input type="text" placeholder="Type to search" />
+</div>
+
+            
+                <nav role="navigation">
+                
+
+
+<ul class="summary">
+    
+    
+
+    
+
+    
+        
+        
+    
+        <li class="chapter " data-level="1.1" data-path="../">
+            
+                <a href="../">
+            
+                    
+                    简介
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2" data-path="../1.FIRST STEPS/README.md">
+            
+                <span>
+            
+                    
+                    粮草先行(FIRST STEPS)
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.2.1" data-path="../1.FIRST STEPS/tutorial.html">
+            
+                <a href="../1.FIRST STEPS/tutorial.html">
+            
+                    
+                    Scrapy指引
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.2" data-path="../1.FIRST STEPS/examples.html">
+            
+                <a href="../1.FIRST STEPS/examples.html">
+            
+                    
+                    一些例子
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3" data-path="../2.BASIC CONCEPTS/README.md">
+            
+                <span>
+            
+                    
+                    基本概念(BASIC CONCEPTS)
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.3.1" data-path="../2.BASIC CONCEPTS/Command line tool.html">
+            
+                <a href="../2.BASIC CONCEPTS/Command line tool.html">
+            
+                    
+                    命令行
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.2" data-path="../2.BASIC CONCEPTS/Spiders.html">
+            
+                <a href="../2.BASIC CONCEPTS/Spiders.html">
+            
+                    
+                    蜘蛛
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.3" data-path="../2.BASIC CONCEPTS/Selectors.html">
+            
+                <a href="../2.BASIC CONCEPTS/Selectors.html">
+            
+                    
+                    选择器
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.4" data-path="../2.BASIC CONCEPTS/Items.html">
+            
+                <a href="../2.BASIC CONCEPTS/Items.html">
+            
+                    
+                    项目
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.5" data-path="../2.BASIC CONCEPTS/Item Loaders.html">
+            
+                <a href="../2.BASIC CONCEPTS/Item Loaders.html">
+            
+                    
+                    项目加载器
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.6" data-path="../2.BASIC CONCEPTS/Scrapy_shell.html">
+            
+                <a href="../2.BASIC CONCEPTS/Scrapy_shell.html">
+            
+                    
+                    Scrapy Shell
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.7" data-path="../2.BASIC CONCEPTS/Item Pipeline.html">
+            
+                <a href="../2.BASIC CONCEPTS/Item Pipeline.html">
+            
+                    
+                    项目管道
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.8" data-path="../2.BASIC CONCEPTS/Feed exports.html">
+            
+                <a href="../2.BASIC CONCEPTS/Feed exports.html">
+            
+                    
+                    Feed输出
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.9" data-path="../2.BASIC CONCEPTS/Requests and Responses.html">
+            
+                <a href="../2.BASIC CONCEPTS/Requests and Responses.html">
+            
+                    
+                    请求与响应
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.10" data-path="../2.BASIC CONCEPTS/Link Extractors.html">
+            
+                <a href="../2.BASIC CONCEPTS/Link Extractors.html">
+            
+                    
+                    链接提取器
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.11" data-path="../2.BASIC CONCEPTS/Settings.html">
+            
+                <a href="../2.BASIC CONCEPTS/Settings.html">
+            
+                    
+                    设置
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.12" data-path="../2.BASIC CONCEPTS/Exceptions.html">
+            
+                <a href="../2.BASIC CONCEPTS/Exceptions.html">
+            
+                    
+                    例外
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4" data-path="README.md">
+            
+                <span>
+            
+                    
+                    内置服务(BULIT IN SERVICES)
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.4.1" data-path="Logging.html">
+            
+                <a href="Logging.html">
+            
+                    
+                    日志记录
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.2" data-path="Stats Collection.html">
+            
+                <a href="Stats Collection.html">
+            
+                    
+                    状态收集
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter active" data-level="1.4.3" data-path="Sending e-mail.html">
+            
+                <a href="Sending e-mail.html">
+            
+                    
+                    发送邮件
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.4" data-path="Telnet Console.html">
+            
+                <a href="Telnet Console.html">
+            
+                    
+                    第一节
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.5" data-path="Web Service.html">
+            
+                <a href="Web Service.html">
+            
+                    
+                    网络服务
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5" data-path="../4.SOLVING SPECIFIC PROBLEMS/README.md">
+            
+                <span>
+            
+                    
+                    解决特殊问题(SOLVING SPECIFIC PROBLEMS)
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.5.1" data-path="../4.SOLVING SPECIFIC PROBLEMS/Frequently Asked Questions.html">
+            
+                <a href="../4.SOLVING SPECIFIC PROBLEMS/Frequently Asked Questions.html">
+            
+                    
+                    一些疑问
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.2" data-path="../4.SOLVING SPECIFIC PROBLEMS/Debugging Spiders.html">
+            
+                <a href="../4.SOLVING SPECIFIC PROBLEMS/Debugging Spiders.html">
+            
+                    
+                    调试蜘蛛
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.3" data-path="../4.SOLVING SPECIFIC PROBLEMS/Spiders Contracts.html">
+            
+                <a href="../4.SOLVING SPECIFIC PROBLEMS/Spiders Contracts.html">
+            
+                    
+                    发送邮件
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.4" data-path="../4.SOLVING SPECIFIC PROBLEMS/Common Practices.html">
+            
+                <a href="../4.SOLVING SPECIFIC PROBLEMS/Common Practices.html">
+            
+                    
+                    常用套路
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.5" data-path="../4.SOLVING SPECIFIC PROBLEMS/Broad Crawls.html">
+            
+                <a href="../4.SOLVING SPECIFIC PROBLEMS/Broad Crawls.html">
+            
+                    
+                    深度爬取
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.6" data-path="../4.SOLVING SPECIFIC PROBLEMS/Using Firefox for scraping.html">
+            
+                <a href="../4.SOLVING SPECIFIC PROBLEMS/Using Firefox for scraping.html">
+            
+                    
+                    用火狐浏览器爬取
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.7" data-path="../4.SOLVING SPECIFIC PROBLEMS/Using Firebug for scraping.html">
+            
+                <a href="../4.SOLVING SPECIFIC PROBLEMS/Using Firebug for scraping.html">
+            
+                    
+                    用Firebug爬取
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.8" data-path="../4.SOLVING SPECIFIC PROBLEMS/Debugging memory leaks.html">
+            
+                <a href="../4.SOLVING SPECIFIC PROBLEMS/Debugging memory leaks.html">
+            
+                    
+                    调试内存溢出
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.9" data-path="../4.SOLVING SPECIFIC PROBLEMS/Downloading and processing files and images.html">
+            
+                <a href="../4.SOLVING SPECIFIC PROBLEMS/Downloading and processing files and images.html">
+            
+                    
+                    下载和处理文件和图片
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.10" data-path="../4.SOLVING SPECIFIC PROBLEMS/Deploying Spiders.html">
+            
+                <a href="../4.SOLVING SPECIFIC PROBLEMS/Deploying Spiders.html">
+            
+                    
+                    部署爬虫
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.11" data-path="../4.SOLVING SPECIFIC PROBLEMS/AutoThrottle extension.html">
+            
+                <a href="../4.SOLVING SPECIFIC PROBLEMS/AutoThrottle extension.html">
+            
+                    
+                    自动Throttle拓展
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.12" data-path="../4.SOLVING SPECIFIC PROBLEMS/Benchmarking.html">
+            
+                <a href="../4.SOLVING SPECIFIC PROBLEMS/Benchmarking.html">
+            
+                    
+                    Web Service
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.13" data-path="../4.SOLVING SPECIFIC PROBLEMS/Jobs_pausing and resuming crawls.html">
+            
+                <a href="../4.SOLVING SPECIFIC PROBLEMS/Jobs_pausing and resuming crawls.html">
+            
+                    
+                    如何暂停与继续爬取
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6" data-path="../5.EXTENDING SCRAPY/README.md">
+            
+                <span>
+            
+                    
+                    Scrapy拓展用法(EXTENDING SCRAPY)
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.6.1" data-path="../5.EXTENDING SCRAPY/Architecture overview.html">
+            
+                <a href="../5.EXTENDING SCRAPY/Architecture overview.html">
+            
+                    
+                    架构描述
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.2" data-path="../5.EXTENDING SCRAPY/Downloader Middleware.html">
+            
+                <a href="../5.EXTENDING SCRAPY/Downloader Middleware.html">
+            
+                    
+                    下载中间件
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.3" data-path="../5.EXTENDING SCRAPY/Spider Middleware.html">
+            
+                <a href="../5.EXTENDING SCRAPY/Spider Middleware.html">
+            
+                    
+                    蜘蛛中间件
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.4" data-path="../5.EXTENDING SCRAPY/Extensions.html">
+            
+                <a href="../5.EXTENDING SCRAPY/Extensions.html">
+            
+                    
+                    拓展
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.5" data-path="../5.EXTENDING SCRAPY/Core API.html">
+            
+                <a href="../5.EXTENDING SCRAPY/Core API.html">
+            
+                    
+                    主要API
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.6" data-path="../5.EXTENDING SCRAPY/Signals.html">
+            
+                <a href="../5.EXTENDING SCRAPY/Signals.html">
+            
+                    
+                    信号
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7" data-path="../6.ALL THE REST/README.md">
+            
+                <span>
+            
+                    
+                    杂项(ALL THE REST)
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.7.1" data-path="../6.ALL THE REST/Question.html">
+            
+                <a href="../6.ALL THE REST/Question.html">
+            
+                    
+                    疑问
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+
+    
+
+    <li class="divider"></li>
+
+    <li>
+        <a href="https://www.gitbook.com" target="blank" class="gitbook-link">
+            Published with GitBook
+        </a>
+    </li>
+</ul>
+
+
+                </nav>
+            
+        
+    </div>
+
+    <div class="book-body">
+        
+            <div class="body-inner">
+                
+                    
+
+<div class="book-header" role="navigation">
+    
+
+    <!-- Title -->
+    <h1>
+        <i class="fa fa-circle-o-notch fa-spin"></i>
+        <a href=".." >发送邮件</a>
+    </h1>
+</div>
+
+
+
+
+                    <div class="page-wrapper" tabindex="-1" role="main">
+                        <div class="page-inner">
+                            
+<div id="book-search-results">
+    <div class="search-noresults">
+    
+                                <section class="normal markdown-section">
+                                
+                                <h3 id="&#x53D1;&#x9001;&#x90AE;&#x4EF6;">&#x53D1;&#x9001;&#x90AE;&#x4EF6;</h3>
+<p>&#x5C3D;&#x7BA1;Python&#x901A;&#x8FC7;smtplib&#x5E93;&#x4F7F;&#x53D1;&#x9001;&#x7535;&#x5B50;&#x90AE;&#x4EF6;&#x53D8;&#x5F97;&#x76F8;&#x5BF9;&#x5BB9;&#x6613;&#xFF0C;&#x4F46;&#x662F;scrapy&#x63D0;&#x4F9B;&#x4E86;&#x5B83;&#x81EA;&#x5DF1;&#x7684;&#x53D1;&#x9001;&#x7535;&#x5B50;&#x90AE;&#x4EF6;&#x7684;&#x5DE5;&#x5177;&#xFF0C;&#x4F7F;&#x5F97;&#x7535;&#x5B50;&#x90AE;&#x4EF6;&#x5F88;&#x5BB9;&#x6613;&#xFF0C;&#x800C;&#x4E14;&#x5B83;&#x662F;&#x4F7F;&#x7528; Twisted&#x5E93;&#x7684; non-blocking IO&#x5B9E;&#x73B0;&#x7684;&#x3002;&#x4E3A;&#x4E86;&#x907F;&#x514D;&#x5E72;&#x6270;&#x722C;&#x866B;&#x7684;non-blocking IO&#xFF0C;&#x5B83;&#x8FD8;&#x63D0;&#x4F9B;&#x4E86;&#x4E00;&#x4E2A;&#x7B80;&#x5355;&#x7684;API&#x6765;&#x53D1;&#x9001;&#x9644;&#x4EF6;&#xFF0C;&#x5E76;&#x4E14;&#x4E00;&#x4E9B;&#x914D;&#x7F6E;&#x5F88;&#x5BB9;&#x6613;&#x914D;&#x7F6E;&#x3002;</p>
+<h4 id="&#x7B80;&#x5355;&#x7684;&#x4F8B;&#x5B50;">&#x7B80;&#x5355;&#x7684;&#x4F8B;&#x5B50;</h4>
+<p>&#x6709;&#x4E24;&#x79CD;&#x65B9;&#x6CD5;&#x6765;&#x5B9E;&#x4F8B;&#x5316;&#x90AE;&#x4EF6;&#x53D1;&#x9001;&#x8005;&#x3002;&#x60A8;&#x53EF;&#x4EE5;&#x4F7F;&#x7528;&#x6807;&#x51C6;&#x6784;&#x9020;&#x5668;&#x5B9E;&#x4F8B;&#x5316;&#x5B83;&#xFF1A;</p>
+<pre><code>from scrapy.mail import MailSender
+mailer = MailSender()
+</code></pre><p>&#x6216;&#x8005;&#x4F60;&#x53EF;&#x4EE5;&#x901A;&#x8FC7;scrapy&#x8BBE;&#x7F6E;&#x4E00;&#x4E2A;&#x5BF9;&#x8C61;&#x6765;&#x5B9E;&#x4F8B;&#x5316;&#x5B83;&#xFF0C;&#x5B83;&#x4F1A;&#x9075;&#x5B88;settings&#xFF1A;</p>
+<pre><code>mailer = MailSender.from_settings(settings)
+</code></pre><p>&#x4E0B;&#x9762;&#x662F;&#x5982;&#x4F55;&#x4F7F;&#x7528;&#x5B83;&#x53D1;&#x9001;&#x7535;&#x5B50;&#x90AE;&#x4EF6;&#xFF08;&#x6CA1;&#x6709;&#x9644;&#x4EF6;&#xFF09;&#xFF1A;</p>
+<pre><code>mailer.send(to=[&quot;someone@example.com&quot;], subject=&quot;Some subject&quot;, body=&quot;Some body&quot;, cc=[&quot;another@example.com&quot;])
+</code></pre><h4 id="mailspider&#x7C7B;&#x5F15;&#x7528;&#xFF1A;">Mailspider&#x7C7B;&#x5F15;&#x7528;&#xFF1A;</h4>
+<p>MailSender&#x662F;&#x7528;&#x4E8E;&#x4ECE;&#x526A;&#x8D34;&#x7C3F;&#x53D1;&#x9001;&#x7535;&#x5B50;&#x90AE;&#x4EF6;&#x7684;&#x9996;&#x9009;&#x7C7B;&#xFF0C;&#x56E0;&#x4E3A;&#x5B83;&#x50CF;&#x6846;&#x67B6;&#x7684;&#x5176;&#x4F59;&#x90E8;&#x5206;&#x4E00;&#x6837;&#x4F7F;&#x7528;&#x4E86;non-blocking IO&#x3002;</p>
+<blockquote>
+<p>  class scrapy.mail.MailSender(smtphost=None, mailfrom=None, smtpuser=None, smtppass=None, smtpport=None)</p>
+</blockquote>
+<p>&#x53C2;&#x6570;&#xFF1A;</p>
+<ul>
+<li>smtphost&#xFF08;str or bytes&#xFF09;&#xFF1A;&#x7528;&#x6765;&#x53D1;&#x9001;&#x90AE;&#x4EF6;&#x7684;SMTP&#xFF08;&#x7B80;&#x5355;&#x90AE;&#x4EF6;&#x4F20;&#x9001;&#x534F;&#x8BAE;&#x670D;&#x52A1;&#x5668;&#xFF09;&#xFF0C;&#x5982;&#x679C;&#x7701;&#x7565;&#xFF0C;&#x5C06;&#x4F7F;&#x7528;MAIL_HOST&#x8BBE;&#x7F6E;&#x3002;</li>
+<li>mailfrom&#xFF08;str&#xFF09;&#xFF1A;&#x4ED6;&#x66FE;&#x7ECF;&#x53D1;&#x9001;&#x7535;&#x5B50;&#x90AE;&#x4EF6;&#x7684;&#x5730;&#x5740;&#xFF08;&#x5728;From:header&#x4E2D;&#xFF09;&#x3002;&#x5982;&#x679C;&#x7701;&#x7565;&#xFF0C;&#x5C06;&#x4F7F;&#x7528;MAIL_FROM&#x8BBE;&#x7F6E;&#x3002;</li>
+<li>smtpuser&#xFF1A;SMTP&#x7684;&#x7528;&#x6237;&#xFF0C;&#x5982;&#x679C;&#x7701;&#x7565;&#xFF0C;&#x5C06;&#x4F7F;&#x7528; MAIL_USER&#x8BBE;&#x7F6E;&#x3002;&#x5982;&#x679C;&#x6CA1;&#x6709;&#x7ED9;&#x51FA;&#xFF0C;&#x5C06;&#x4E0D;&#x4F1A;&#x6267;&#x884C;SMTP&#x8BA4;&#x8BC1;&#x3002;</li>
+<li>smtppass (str or bytes)&#xFF1A;&#x7528;&#x4E8E;&#x8EAB;&#x4EFD;&#x9A8C;&#x8BC1;&#x7684;SMTP&#x901A;&#x884C;&#x8BC1;&#x3002;<ul>
+<li>smtpport (int)&#xFF1A;&#x8FDE;&#x63A5;&#x5230;&#x7684;SMTP&#x7AEF;&#x53E3;&#x3002;</li>
+</ul>
+</li>
+<li>smtptls (boolean)&#xFF1A;&#x5F3A;&#x5236;&#x4F7F;&#x7528;SMTP STARTTLS&#x3002;</li>
+<li>smtpssl (boolean)&#xFF1A;&#x5F3A;&#x5236;&#x4F7F;&#x7528;&#x5B89;&#x5168;SSL&#x8FDE;&#x63A5;&#x3002;</li>
+</ul>
+<blockquote>
+<p> classmethod from_settings(settings)</p>
+</blockquote>
+<p>&#x4F7F;&#x7528;scrapy&#x8BBE;&#x7F6E;&#x5B9E;&#x4F8B;&#x5316;&#x5BF9;&#x8C61;&#xFF0C;&#x5B83;&#x5C06;&#x5C0A;&#x91CD;&#x8FD9;&#x4E9B;scrapy&#x8BBE;&#x7F6E;<br>&#x53C2;&#x6570;&#xFF1A;settings (scrapy.settings.Settings &#x5BF9;&#x8C61;) -&#x7535;&#x5B50;&#x90AE;&#x4EF6;&#x6536;&#x4EF6;&#x4EBA;</p>
+<blockquote>
+<p> send(to, subject, body, cc=None, attachs=(), mimetype=&apos;text/plain&apos;, charset=None)     </p>
+</blockquote>
+<p>&#x53D1;&#x9001;&#x7535;&#x5B50;&#x90AE;&#x4EF6;&#x7ED9;&#x6307;&#x5B9A;&#x7684;&#x6536;&#x4EF6;&#x4EBA;&#x3002;<br>&#x53C2;&#x6570;&#xFF1A;  </p>
+<ul>
+<li>to (str or list of str) &#x2013; &#x7535;&#x5B50;&#x90AE;&#x4EF6;&#x6536;&#x4EF6;&#x4EBA;  </li>
+<li>subject (str) - &#x7535;&#x5B50;&#x90AE;&#x4EF6;&#x7684;&#x4E3B;&#x9898;  </li>
+<li>cc (str or list of str) -  &#x6284;&#x9001;&#x7684;&#x90AE;&#x4EF6;</li>
+<li>body (str) &#x2013; &#x7535;&#x5B50;&#x90AE;&#x4EF6;&#x7684;&#x5185;&#x5BB9;</li>
+<li>attachs (iterable) - &#x4E00;&#x4E2A;&#x5143;&#x7956;(attach_name, mimetype, file_object) &#xFF0C;&#x5176;&#x4E2D;attach_name&#x662F;&#x4E00;&#x4E2A;&#x5B57;&#x7B26;&#x4E32;&#xFF0C;&#x5B83;&#x7684;&#x540D;&#x5B57;&#x5C06;&#x51FA;&#x73B0;&#x5728;&#x7535;&#x5B50;&#x90AE;&#x4EF6;&#x9644;&#x4EF6;&#x4E2D;&#xFF0C;mimetype&#x662F;&#x9644;&#x4EF6;&#x7684;MIME&#x7C7B;&#x578B;&#xFF0C;file_object&#x662F;&#x4E00;&#x4E2A;&#x53EF;&#x8BFB;&#x7684;&#x6587;&#x4EF6;&#x5BF9;&#x8C61;&#xFF0C;&#x5E26;&#x6709;&#x9644;&#x4EF6;&#x7684;&#x5185;&#x5BB9;</li>
+<li>mimetype (str) &#x2013; &#x7535;&#x5B50;&#x90AE;&#x4EF6;&#x7684;MIME&#x7C7B;&#x578B;</li>
+<li>charset (str) &#x2013; &#x7528;&#x4E8E;&#x7535;&#x5B50;&#x90AE;&#x4EF6;&#x5185;&#x5BB9;&#x7684;&#x5B57;&#x7B26;&#x7F16;&#x7801;  <h4 id="&#x90AE;&#x4EF6;&#x8BBE;&#x7F6E;">&#x90AE;&#x4EF6;&#x8BBE;&#x7F6E;</h4>
+&#x8FD9;&#x4E9B;&#x8BBE;&#x7F6E;&#x5B9A;&#x4E49;&#x4E86;MailSender&#x7C7B;&#x7684;&#x9ED8;&#x8BA4;&#x6784;&#x9020;&#x5668;&#x503C;&#xFF0C;&#x5E76;&#x4E14;&#x53EF;&#x4EE5;&#x7528;&#x6765;&#x5728;&#x60A8;&#x7684;&#x9879;&#x76EE;&#x4E2D;&#x914D;&#x7F6E;&#x7535;&#x5B50;&#x90AE;&#x4EF6;&#x901A;&#x77E5;&#xFF0C;&#x800C;&#x4E0D;&#x9700;&#x8981;&#x7F16;&#x5199;&#x4EFB;&#x4F55;&#x4EE3;&#x7801;&#xFF08;&#x5BF9;&#x4E8E;&#x90A3;&#x4E9B;&#x4F7F;&#x7528;MailSender&#x7684;&#x6269;&#x5C55;&#x548C;&#x4EE3;&#x7801;&#xFF09;&#x3002;<h5 id="mailfrom">MAIL_FROM</h5>
+&#x9ED8;&#x8BA4;&#xFF1A;&apos;scrapy@localhost&apos;<br>&#x90AE;&#x4EF6;&#x7684;&#x53D1;&#x9001;&#x8005;&#xFF08;&#x4ECE;header&#xFF09;  <h5 id="mailhost">MAIL_HOST</h5>
+&#x9ED8;&#x8BA4;&#xFF1A;&apos;localhost&apos;<br>&#x7528;&#x4E8E;&#x53D1;&#x9001;&#x7535;&#x5B50;&#x90AE;&#x4EF6;&#x7684;SMTP&#x4E3B;&#x673A;  <h5 id="mailport">MAIL_PORT</h5>
+&#x9ED8;&#x8BA4;&#xFF1A;25 
+&#x7528;&#x4E8E;&#x53D1;&#x9001;&#x7535;&#x5B50;&#x90AE;&#x4EF6;&#x7684;SMTP&#x7AEF;&#x53E3; <h5 id="mailuser">MAIL_USER</h5>
+&#x9ED8;&#x8BA4;&#xFF1A;None 
+&#x7528;&#x6237;&#x53EF;&#x7528;&#x4E8E;SMTP&#x8EAB;&#x4EFD;&#x9A8C;&#x8BC1;&#x3002;&#x5982;&#x679C;&#x7981;&#x7528;&#x4E86;SMTP&#x8EAB;&#x4EFD;&#x9A8C;&#x8BC1;&#xFF0C;&#x5219;&#x5C06;&#x6267;&#x884C;  <h5 id="mailtls">MAIL_TLS</h5>
+&#x9ED8;&#x8BA4;&#xFF1A;False
+&#x5F3A;&#x5236;&#x4F7F;&#x7528;STARTTLS. STARTTLS &#x662F;&#x4E00;&#x79CD;&#x5229;&#x7528;SSL/TLS&#x5C06;&#x5176;&#x5347;&#x7EA7;&#x5230;&#x5B89;&#x5168;&#x8FDE;&#x63A5;&#x7684;&#x65B9;&#x6CD5;  <h5 id="mailssl">MAIL_SSL</h5>
+&#x9ED8;&#x8BA4;&#xFF1A;False 
+&#x4F7F;&#x7528;SSL&#x52A0;&#x5BC6;&#x8FDE;&#x63A5;&#x5F3A;&#x5236;&#x8FDE;&#x63A5;  </li>
+</ul>
+
+                                
+                                </section>
+                            
+    </div>
+    <div class="search-results">
+        <div class="has-results">
+            
+            <h1 class="search-results-title"><span class='search-results-count'></span> results matching "<span class='search-query'></span>"</h1>
+            <ul class="search-results-list"></ul>
+            
+        </div>
+        <div class="no-results">
+            
+            <h1 class="search-results-title">No results matching "<span class='search-query'></span>"</h1>
+            
+        </div>
+    </div>
+</div>
+
+                        </div>
+                    </div>
+                
+            </div>
+
+            
+                
+                <a href="Stats Collection.html" class="navigation navigation-prev " aria-label="Previous page: 状态收集">
+                    <i class="fa fa-angle-left"></i>
+                </a>
+                
+                
+                <a href="Telnet Console.html" class="navigation navigation-next " aria-label="Next page: 第一节">
+                    <i class="fa fa-angle-right"></i>
+                </a>
+                
+            
+        
+    </div>
+
+    <script>
+        var gitbook = gitbook || [];
+        gitbook.push(function() {
+            gitbook.page.hasChanged({"page":{"title":"发送邮件","level":"1.4.3","depth":2,"next":{"title":"第一节","level":"1.4.4","depth":2,"path":"3.BULIT-IN SERVICES/Telnet Console.md","ref":"3.BULIT-IN SERVICES/Telnet Console.md","articles":[]},"previous":{"title":"状态收集","level":"1.4.2","depth":2,"path":"3.BULIT-IN SERVICES/Stats Collection.md","ref":"3.BULIT-IN SERVICES/Stats Collection.md","articles":[]},"dir":"ltr"},"config":{"gitbook":"*","theme":"default","variables":{},"plugins":[],"pluginsConfig":{"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"}},"file":{"path":"3.BULIT-IN SERVICES/Sending e-mail.md","mtime":"2018-04-23T15:17:15.087Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2018-05-08T09:17:40.626Z"},"basePath":"..","book":{"language":""}});
+        });
+    </script>
+</div>
+
+        
+    <script src="../gitbook/gitbook.js"></script>
+    <script src="../gitbook/theme.js"></script>
+    
+        
+        <script src="../gitbook/gitbook-plugin-search/search-engine.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-search/search.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-lunr/lunr.min.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-lunr/search-lunr.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-sharing/buttons.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-fontsettings/fontsettings.js"></script>
+        
+    
+
+    </body>
+</html>
+
