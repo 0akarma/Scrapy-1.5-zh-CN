@@ -1,0 +1,866 @@
+
+<!DOCTYPE HTML>
+<html lang="" >
+    <head>
+        <meta charset="UTF-8">
+        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+        <title>部署爬虫 · GitBook</title>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="description" content="">
+        <meta name="generator" content="GitBook 3.2.3">
+        
+        
+        
+    
+    <link rel="stylesheet" href="../gitbook/style.css">
+
+    
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-highlight/website.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-search/search.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-fontsettings/website.css">
+                
+            
+        
+
+    
+
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+
+        
+    
+    
+    <meta name="HandheldFriendly" content="true"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <link rel="apple-touch-icon-precomposed" sizes="152x152" href="../gitbook/images/apple-touch-icon-precomposed-152.png">
+    <link rel="shortcut icon" href="../gitbook/images/favicon.ico" type="image/x-icon">
+
+    
+    <link rel="next" href="AutoThrottle extension.html" />
+    
+    
+    <link rel="prev" href="Downloading and processing files and images.html" />
+    
+
+    </head>
+    <body>
+        
+<div class="book">
+    <div class="book-summary">
+        
+            
+<div id="book-search-input" role="search">
+    <input type="text" placeholder="Type to search" />
+</div>
+
+            
+                <nav role="navigation">
+                
+
+
+<ul class="summary">
+    
+    
+
+    
+
+    
+        
+        
+    
+        <li class="chapter " data-level="1.1" data-path="../">
+            
+                <a href="../">
+            
+                    
+                    简介
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2" data-path="../1.FIRST STEPS/README.md">
+            
+                <span>
+            
+                    
+                    粮草先行(FIRST STEPS)
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.2.1" data-path="../1.FIRST STEPS/tutorial.html">
+            
+                <a href="../1.FIRST STEPS/tutorial.html">
+            
+                    
+                    Scrapy指引
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.2" data-path="../1.FIRST STEPS/examples.html">
+            
+                <a href="../1.FIRST STEPS/examples.html">
+            
+                    
+                    一些例子
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3" data-path="../2.BASIC CONCEPTS/README.md">
+            
+                <span>
+            
+                    
+                    基本概念(BASIC CONCEPTS)
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.3.1" data-path="../2.BASIC CONCEPTS/Command line tool.html">
+            
+                <a href="../2.BASIC CONCEPTS/Command line tool.html">
+            
+                    
+                    命令行
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.2" data-path="../2.BASIC CONCEPTS/Spiders.html">
+            
+                <a href="../2.BASIC CONCEPTS/Spiders.html">
+            
+                    
+                    蜘蛛
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.3" data-path="../2.BASIC CONCEPTS/Selectors.html">
+            
+                <a href="../2.BASIC CONCEPTS/Selectors.html">
+            
+                    
+                    选择器
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.4" data-path="../2.BASIC CONCEPTS/Items.html">
+            
+                <a href="../2.BASIC CONCEPTS/Items.html">
+            
+                    
+                    项目
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.5" data-path="../2.BASIC CONCEPTS/Item Loaders.html">
+            
+                <a href="../2.BASIC CONCEPTS/Item Loaders.html">
+            
+                    
+                    项目加载器
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.6" data-path="../2.BASIC CONCEPTS/Scrapy_shell.html">
+            
+                <a href="../2.BASIC CONCEPTS/Scrapy_shell.html">
+            
+                    
+                    Scrapy Shell
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.7" data-path="../2.BASIC CONCEPTS/Item Pipeline.html">
+            
+                <a href="../2.BASIC CONCEPTS/Item Pipeline.html">
+            
+                    
+                    项目管道
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.8" data-path="../2.BASIC CONCEPTS/Feed exports.html">
+            
+                <a href="../2.BASIC CONCEPTS/Feed exports.html">
+            
+                    
+                    Feed输出
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.9" data-path="../2.BASIC CONCEPTS/Requests and Responses.html">
+            
+                <a href="../2.BASIC CONCEPTS/Requests and Responses.html">
+            
+                    
+                    请求与响应
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.10" data-path="../2.BASIC CONCEPTS/Link Extractors.html">
+            
+                <a href="../2.BASIC CONCEPTS/Link Extractors.html">
+            
+                    
+                    链接提取器
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.11" data-path="../2.BASIC CONCEPTS/Settings.html">
+            
+                <a href="../2.BASIC CONCEPTS/Settings.html">
+            
+                    
+                    设置
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.12" data-path="../2.BASIC CONCEPTS/Exceptions.html">
+            
+                <a href="../2.BASIC CONCEPTS/Exceptions.html">
+            
+                    
+                    例外
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4" data-path="../3.BULIT-IN SERVICES/README.md">
+            
+                <span>
+            
+                    
+                    内置服务(BULIT IN SERVICES)
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.4.1" data-path="../3.BULIT-IN SERVICES/Logging.html">
+            
+                <a href="../3.BULIT-IN SERVICES/Logging.html">
+            
+                    
+                    日志记录
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.2" data-path="../3.BULIT-IN SERVICES/Stats Collection.html">
+            
+                <a href="../3.BULIT-IN SERVICES/Stats Collection.html">
+            
+                    
+                    状态收集
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.3" data-path="../3.BULIT-IN SERVICES/Sending e-mail.html">
+            
+                <a href="../3.BULIT-IN SERVICES/Sending e-mail.html">
+            
+                    
+                    发送邮件
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.4" data-path="../3.BULIT-IN SERVICES/Telnet Console.html">
+            
+                <a href="../3.BULIT-IN SERVICES/Telnet Console.html">
+            
+                    
+                    第一节
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.5" data-path="../3.BULIT-IN SERVICES/Web Service.html">
+            
+                <a href="../3.BULIT-IN SERVICES/Web Service.html">
+            
+                    
+                    网络服务
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5" data-path="README.md">
+            
+                <span>
+            
+                    
+                    解决特殊问题(SOLVING SPECIFIC PROBLEMS)
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.5.1" data-path="Frequently Asked Questions.html">
+            
+                <a href="Frequently Asked Questions.html">
+            
+                    
+                    一些疑问
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.2" data-path="Debugging Spiders.html">
+            
+                <a href="Debugging Spiders.html">
+            
+                    
+                    调试蜘蛛
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.3" data-path="Spiders Contracts.html">
+            
+                <a href="Spiders Contracts.html">
+            
+                    
+                    发送邮件
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.4" data-path="Common Practices.html">
+            
+                <a href="Common Practices.html">
+            
+                    
+                    常用套路
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.5" data-path="Broad Crawls.html">
+            
+                <a href="Broad Crawls.html">
+            
+                    
+                    深度爬取
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.6" data-path="Using Firefox for scraping.html">
+            
+                <a href="Using Firefox for scraping.html">
+            
+                    
+                    用火狐浏览器爬取
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.7" data-path="Using Firebug for scraping.html">
+            
+                <a href="Using Firebug for scraping.html">
+            
+                    
+                    用Firebug爬取
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.8" data-path="Debugging memory leaks.html">
+            
+                <a href="Debugging memory leaks.html">
+            
+                    
+                    调试内存溢出
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.9" data-path="Downloading and processing files and images.html">
+            
+                <a href="Downloading and processing files and images.html">
+            
+                    
+                    下载和处理文件和图片
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter active" data-level="1.5.10" data-path="Deploying Spiders.html">
+            
+                <a href="Deploying Spiders.html">
+            
+                    
+                    部署爬虫
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.11" data-path="AutoThrottle extension.html">
+            
+                <a href="AutoThrottle extension.html">
+            
+                    
+                    自动Throttle拓展
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.12" data-path="Benchmarking.html">
+            
+                <a href="Benchmarking.html">
+            
+                    
+                    Web Service
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.13" data-path="Jobs_pausing and resuming crawls.html">
+            
+                <a href="Jobs_pausing and resuming crawls.html">
+            
+                    
+                    如何暂停与继续爬取
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6" data-path="../5.EXTENDING SCRAPY/README.md">
+            
+                <span>
+            
+                    
+                    Scrapy拓展用法(EXTENDING SCRAPY)
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.6.1" data-path="../5.EXTENDING SCRAPY/Architecture overview.html">
+            
+                <a href="../5.EXTENDING SCRAPY/Architecture overview.html">
+            
+                    
+                    架构描述
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.2" data-path="../5.EXTENDING SCRAPY/Downloader Middleware.html">
+            
+                <a href="../5.EXTENDING SCRAPY/Downloader Middleware.html">
+            
+                    
+                    下载中间件
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.3" data-path="../5.EXTENDING SCRAPY/Spider Middleware.html">
+            
+                <a href="../5.EXTENDING SCRAPY/Spider Middleware.html">
+            
+                    
+                    蜘蛛中间件
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.4" data-path="../5.EXTENDING SCRAPY/Extensions.html">
+            
+                <a href="../5.EXTENDING SCRAPY/Extensions.html">
+            
+                    
+                    拓展
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.5" data-path="../5.EXTENDING SCRAPY/Core API.html">
+            
+                <a href="../5.EXTENDING SCRAPY/Core API.html">
+            
+                    
+                    主要API
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.6" data-path="../5.EXTENDING SCRAPY/Signals.html">
+            
+                <a href="../5.EXTENDING SCRAPY/Signals.html">
+            
+                    
+                    信号
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7" data-path="../6.ALL THE REST/README.md">
+            
+                <span>
+            
+                    
+                    杂项(ALL THE REST)
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.7.1" data-path="../6.ALL THE REST/Question.html">
+            
+                <a href="../6.ALL THE REST/Question.html">
+            
+                    
+                    疑问
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+
+    
+
+    <li class="divider"></li>
+
+    <li>
+        <a href="https://www.gitbook.com" target="blank" class="gitbook-link">
+            Published with GitBook
+        </a>
+    </li>
+</ul>
+
+
+                </nav>
+            
+        
+    </div>
+
+    <div class="book-body">
+        
+            <div class="body-inner">
+                
+                    
+
+<div class="book-header" role="navigation">
+    
+
+    <!-- Title -->
+    <h1>
+        <i class="fa fa-circle-o-notch fa-spin"></i>
+        <a href=".." >部署爬虫</a>
+    </h1>
+</div>
+
+
+
+
+                    <div class="page-wrapper" tabindex="-1" role="main">
+                        <div class="page-inner">
+                            
+<div id="book-search-results">
+    <div class="search-noresults">
+    
+                                <section class="normal markdown-section">
+                                
+                                <h1 id="&#x90E8;&#x7F72;spider">&#x90E8;&#x7F72;Spider</h1>
+<p>&#x672C;&#x8282;&#x4ECB;&#x7ECD;&#x60A8;&#x4E3A;&#x90E8;&#x7F72;Scrapy&#x8718;&#x86DB;&#x800C;&#x5B9A;&#x671F;&#x8FD0;&#x884C;&#x5B83;&#x4EEC;&#x7684;&#x4E0D;&#x540C;&#x9009;&#x9879;&#x3002;&#x5728;&#x672C;&#x5730;&#x673A;&#x5668;&#x4E0A;&#x8FD0;&#x884C;Scrapy&#x8718;&#x86DB;&#x7A0B;&#x5E8F;&#x5BF9;&#x4E8E;&#xFF08;&#x65E9;&#x671F;&#xFF09;&#x5F00;&#x53D1;&#x9636;&#x6BB5;&#x6765;&#x8BF4;&#x975E;&#x5E38;&#x65B9;&#x4FBF;&#xFF0C;&#x4F46;&#x662F;&#x5F53;&#x60A8;&#x9700;&#x8981;&#x6267;&#x884C;&#x957F;&#x65F6;&#x95F4;&#x8FD0;&#x884C;&#x7684;&#x8718;&#x86DB;&#x6216;&#x79FB;&#x52A8;&#x8718;&#x86DB;&#x6765;&#x6301;&#x7EED;&#x8FD0;&#x884C;&#x65F6;&#xFF0C;&#x5E76;&#x4E0D;&#x662F;&#x90A3;&#x4E48;&#x91CD;&#x8981;&#x3002;&#x8FD9;&#x662F;&#x90E8;&#x7F72;Scrapy&#x8718;&#x86DB;&#x89E3;&#x51B3;&#x65B9;&#x6848;&#x7684;&#x5730;&#x65B9;&#x3002;</p>
+<p>&#x90E8;&#x7F72;Scrapy&#x8718;&#x86DB;&#x7684;&#x666E;&#x904D;&#x9009;&#x62E9;&#x662F;&#xFF1A;</p>
+<ul>
+<li><a href="https://doc.scrapy.org/en/latest/topics/deploy.html#deploy-scrapyd" target="_blank">Scrapyd</a>&#xFF08;&#x5F00;&#x6E90;&#xFF09;</li>
+<li><a href="https://doc.scrapy.org/en/latest/topics/deploy.html#deploy-scrapy-cloud" target="_blank">Scrapy&#x4E91;</a>&#xFF08;&#x57FA;&#x4E8E;&#x4E91;&#xFF09;</li>
+</ul>
+<h2 id="&#x90E8;&#x7F72;&#x5230;scrapyd&#x670D;&#x52A1;&#x5668;">&#x90E8;&#x7F72;&#x5230;Scrapyd&#x670D;&#x52A1;&#x5668;</h2>
+<p><a href="https://github.com/scrapy/scrapyd" target="_blank">Scrapyd</a>&#x662F;&#x8FD0;&#x884C;Scrapy&#x8718;&#x86DB;&#x7684;&#x5F00;&#x6E90;&#x5E94;&#x7528;&#x7A0B;&#x5E8F;&#x3002;&#x5B83;&#x63D0;&#x4F9B;&#x4E86;&#x4E00;&#x4E2A;HTTP API&#x7684;&#x670D;&#x52A1;&#x5668;&#xFF0C;&#x80FD;&#x591F;&#x8FD0;&#x884C;&#x548C;&#x76D1;&#x63A7;Scrapy&#x8718;&#x86DB;&#x3002;</p>
+<p>&#x8981;&#x5C06;Spider&#x90E8;&#x7F72;&#x5230;Scrapyd&#xFF0C;&#x60A8;&#x53EF;&#x4EE5;&#x4F7F;&#x7528;&#x7531;<a href="https://github.com/scrapy/scrapyd-client" target="_blank">scrapyd-client</a>&#x5305;&#x63D0;&#x4F9B;&#x7684;scrapyd-deploy&#x5DE5;&#x5177;&#x3002;&#x8BF7;&#x53C2;&#x9605;<a href="https://scrapyd.readthedocs.io/en/latest/deploy.html" target="_blank">scrapyd-deploy&#x6587;&#x6863;</a>&#x4EE5;&#x83B7;&#x53D6;&#x66F4;&#x591A;&#x4FE1;&#x606F;&#x3002;</p>
+<p>Scrapyd&#x7531;&#x4E00;&#x4E9B;Scrapy&#x5F00;&#x53D1;&#x4EBA;&#x5458;&#x7EF4;&#x62A4;&#x3002;</p>
+<h2 id="&#x90E8;&#x7F72;&#x5230;scrapy-cloud">&#x90E8;&#x7F72;&#x5230;Scrapy Cloud</h2>
+<p><a href="https://scrapinghub.com/scrapy-cloud" target="_blank">Scrapy Cloud</a>&#x662F;<a href="https://scrapinghub.com/scrapy-cloud" target="_blank">Scrapy</a>&#x80CC;&#x540E;&#x7684;<a href="https://scrapinghub.com/" target="_blank">Scrapinghub</a>&#x6258;&#x7BA1;&#x7684;&#x57FA;&#x4E8E;&#x4E91;&#x7684;&#x670D;&#x52A1;&#x3002;</p>
+<p>Scrapy Cloud&#x4E0D;&#x9700;&#x8981;&#x5B89;&#x88C5;&#x548C;&#x76D1;&#x63A7;&#x670D;&#x52A1;&#x5668;&#xFF0C;&#x5E76;&#x63D0;&#x4F9B;&#x4E86;&#x4E00;&#x4E2A;&#x5F88;&#x597D;&#x7684;&#x7528;&#x6237;&#x754C;&#x9762;&#x6765;&#x7BA1;&#x7406;&#x8718;&#x86DB;&#x5E76;&#x67E5;&#x770B;&#x6293;&#x53D6;&#x7684;&#x9879;&#x76EE;&#xFF0C;&#x65E5;&#x5FD7;&#x548C;&#x7EDF;&#x8BA1;&#x4FE1;&#x606F;&#x3002;</p>
+<p>&#x8981;&#x5C06;Scider&#x90E8;&#x7F72;&#x5230;Scrapy Cloud&#xFF0C;&#x60A8;&#x53EF;&#x4EE5;&#x4F7F;&#x7528;<a href="https://doc.scrapinghub.com/shub.html" target="_blank">shub</a>&#x547D;&#x4EE4;&#x884C;&#x5DE5;&#x5177;&#x3002;&#x8BF7;&#x53C2;&#x9605;<a href="https://doc.scrapinghub.com/scrapy-cloud.html" target="_blank">Scrapy Cloud&#x6587;&#x6863;</a>&#x4EE5;&#x83B7;&#x53D6;&#x66F4;&#x591A;&#x4FE1;&#x606F;&#x3002;</p>
+<p>Scrapy Cloud&#x4E0E;Scrapyd&#x517C;&#x5BB9;&#xFF0C;&#x5E76;&#x4E14;&#x53EF;&#x4EE5;&#x6839;&#x636E;&#x9700;&#x8981;&#x5728;&#x5B83;&#x4EEC;&#x4E4B;&#x95F4;&#x5207;&#x6362; - &#x4ECE;<code>scrapy.cfg</code>&#x6587;&#x4EF6;&#x4E2D;&#x8BFB;&#x53D6;&#x914D;&#x7F6E;<code>scrapyd-deploy</code>&#x3002;</p>
+
+                                
+                                </section>
+                            
+    </div>
+    <div class="search-results">
+        <div class="has-results">
+            
+            <h1 class="search-results-title"><span class='search-results-count'></span> results matching "<span class='search-query'></span>"</h1>
+            <ul class="search-results-list"></ul>
+            
+        </div>
+        <div class="no-results">
+            
+            <h1 class="search-results-title">No results matching "<span class='search-query'></span>"</h1>
+            
+        </div>
+    </div>
+</div>
+
+                        </div>
+                    </div>
+                
+            </div>
+
+            
+                
+                <a href="Downloading and processing files and images.html" class="navigation navigation-prev " aria-label="Previous page: 下载和处理文件和图片">
+                    <i class="fa fa-angle-left"></i>
+                </a>
+                
+                
+                <a href="AutoThrottle extension.html" class="navigation navigation-next " aria-label="Next page: 自动Throttle拓展">
+                    <i class="fa fa-angle-right"></i>
+                </a>
+                
+            
+        
+    </div>
+
+    <script>
+        var gitbook = gitbook || [];
+        gitbook.push(function() {
+            gitbook.page.hasChanged({"page":{"title":"部署爬虫","level":"1.5.10","depth":2,"next":{"title":"自动Throttle拓展","level":"1.5.11","depth":2,"path":"4.SOLVING SPECIFIC PROBLEMS/AutoThrottle extension.md","ref":"4.SOLVING SPECIFIC PROBLEMS/AutoThrottle extension.md","articles":[]},"previous":{"title":"下载和处理文件和图片","level":"1.5.9","depth":2,"path":"4.SOLVING SPECIFIC PROBLEMS/Downloading and processing files and images.md","ref":"4.SOLVING SPECIFIC PROBLEMS/Downloading and processing files and images.md","articles":[]},"dir":"ltr"},"config":{"gitbook":"*","theme":"default","variables":{},"plugins":[],"pluginsConfig":{"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"}},"file":{"path":"4.SOLVING SPECIFIC PROBLEMS/Deploying Spiders.md","mtime":"2018-04-30T14:01:56.000Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2018-05-08T09:17:40.626Z"},"basePath":"..","book":{"language":""}});
+        });
+    </script>
+</div>
+
+        
+    <script src="../gitbook/gitbook.js"></script>
+    <script src="../gitbook/theme.js"></script>
+    
+        
+        <script src="../gitbook/gitbook-plugin-search/search-engine.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-search/search.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-lunr/lunr.min.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-lunr/search-lunr.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-sharing/buttons.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-fontsettings/fontsettings.js"></script>
+        
+    
+
+    </body>
+</html>
+

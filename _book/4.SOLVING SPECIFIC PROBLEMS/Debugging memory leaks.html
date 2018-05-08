@@ -1,0 +1,985 @@
+
+<!DOCTYPE HTML>
+<html lang="" >
+    <head>
+        <meta charset="UTF-8">
+        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+        <title>调试内存溢出 · GitBook</title>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="description" content="">
+        <meta name="generator" content="GitBook 3.2.3">
+        
+        
+        
+    
+    <link rel="stylesheet" href="../gitbook/style.css">
+
+    
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-highlight/website.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-search/search.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-fontsettings/website.css">
+                
+            
+        
+
+    
+
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+
+        
+    
+    
+    <meta name="HandheldFriendly" content="true"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <link rel="apple-touch-icon-precomposed" sizes="152x152" href="../gitbook/images/apple-touch-icon-precomposed-152.png">
+    <link rel="shortcut icon" href="../gitbook/images/favicon.ico" type="image/x-icon">
+
+    
+    <link rel="next" href="Downloading and processing files and images.html" />
+    
+    
+    <link rel="prev" href="Using Firebug for scraping.html" />
+    
+
+    </head>
+    <body>
+        
+<div class="book">
+    <div class="book-summary">
+        
+            
+<div id="book-search-input" role="search">
+    <input type="text" placeholder="Type to search" />
+</div>
+
+            
+                <nav role="navigation">
+                
+
+
+<ul class="summary">
+    
+    
+
+    
+
+    
+        
+        
+    
+        <li class="chapter " data-level="1.1" data-path="../">
+            
+                <a href="../">
+            
+                    
+                    简介
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2" data-path="../1.FIRST STEPS/README.md">
+            
+                <span>
+            
+                    
+                    粮草先行(FIRST STEPS)
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.2.1" data-path="../1.FIRST STEPS/tutorial.html">
+            
+                <a href="../1.FIRST STEPS/tutorial.html">
+            
+                    
+                    Scrapy指引
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.2" data-path="../1.FIRST STEPS/examples.html">
+            
+                <a href="../1.FIRST STEPS/examples.html">
+            
+                    
+                    一些例子
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3" data-path="../2.BASIC CONCEPTS/README.md">
+            
+                <span>
+            
+                    
+                    基本概念(BASIC CONCEPTS)
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.3.1" data-path="../2.BASIC CONCEPTS/Command line tool.html">
+            
+                <a href="../2.BASIC CONCEPTS/Command line tool.html">
+            
+                    
+                    命令行
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.2" data-path="../2.BASIC CONCEPTS/Spiders.html">
+            
+                <a href="../2.BASIC CONCEPTS/Spiders.html">
+            
+                    
+                    蜘蛛
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.3" data-path="../2.BASIC CONCEPTS/Selectors.html">
+            
+                <a href="../2.BASIC CONCEPTS/Selectors.html">
+            
+                    
+                    选择器
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.4" data-path="../2.BASIC CONCEPTS/Items.html">
+            
+                <a href="../2.BASIC CONCEPTS/Items.html">
+            
+                    
+                    项目
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.5" data-path="../2.BASIC CONCEPTS/Item Loaders.html">
+            
+                <a href="../2.BASIC CONCEPTS/Item Loaders.html">
+            
+                    
+                    项目加载器
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.6" data-path="../2.BASIC CONCEPTS/Scrapy_shell.html">
+            
+                <a href="../2.BASIC CONCEPTS/Scrapy_shell.html">
+            
+                    
+                    Scrapy Shell
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.7" data-path="../2.BASIC CONCEPTS/Item Pipeline.html">
+            
+                <a href="../2.BASIC CONCEPTS/Item Pipeline.html">
+            
+                    
+                    项目管道
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.8" data-path="../2.BASIC CONCEPTS/Feed exports.html">
+            
+                <a href="../2.BASIC CONCEPTS/Feed exports.html">
+            
+                    
+                    Feed输出
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.9" data-path="../2.BASIC CONCEPTS/Requests and Responses.html">
+            
+                <a href="../2.BASIC CONCEPTS/Requests and Responses.html">
+            
+                    
+                    请求与响应
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.10" data-path="../2.BASIC CONCEPTS/Link Extractors.html">
+            
+                <a href="../2.BASIC CONCEPTS/Link Extractors.html">
+            
+                    
+                    链接提取器
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.11" data-path="../2.BASIC CONCEPTS/Settings.html">
+            
+                <a href="../2.BASIC CONCEPTS/Settings.html">
+            
+                    
+                    设置
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.12" data-path="../2.BASIC CONCEPTS/Exceptions.html">
+            
+                <a href="../2.BASIC CONCEPTS/Exceptions.html">
+            
+                    
+                    例外
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4" data-path="../3.BULIT-IN SERVICES/README.md">
+            
+                <span>
+            
+                    
+                    内置服务(BULIT IN SERVICES)
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.4.1" data-path="../3.BULIT-IN SERVICES/Logging.html">
+            
+                <a href="../3.BULIT-IN SERVICES/Logging.html">
+            
+                    
+                    日志记录
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.2" data-path="../3.BULIT-IN SERVICES/Stats Collection.html">
+            
+                <a href="../3.BULIT-IN SERVICES/Stats Collection.html">
+            
+                    
+                    状态收集
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.3" data-path="../3.BULIT-IN SERVICES/Sending e-mail.html">
+            
+                <a href="../3.BULIT-IN SERVICES/Sending e-mail.html">
+            
+                    
+                    发送邮件
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.4" data-path="../3.BULIT-IN SERVICES/Telnet Console.html">
+            
+                <a href="../3.BULIT-IN SERVICES/Telnet Console.html">
+            
+                    
+                    第一节
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.5" data-path="../3.BULIT-IN SERVICES/Web Service.html">
+            
+                <a href="../3.BULIT-IN SERVICES/Web Service.html">
+            
+                    
+                    网络服务
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5" data-path="README.md">
+            
+                <span>
+            
+                    
+                    解决特殊问题(SOLVING SPECIFIC PROBLEMS)
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.5.1" data-path="Frequently Asked Questions.html">
+            
+                <a href="Frequently Asked Questions.html">
+            
+                    
+                    一些疑问
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.2" data-path="Debugging Spiders.html">
+            
+                <a href="Debugging Spiders.html">
+            
+                    
+                    调试蜘蛛
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.3" data-path="Spiders Contracts.html">
+            
+                <a href="Spiders Contracts.html">
+            
+                    
+                    发送邮件
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.4" data-path="Common Practices.html">
+            
+                <a href="Common Practices.html">
+            
+                    
+                    常用套路
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.5" data-path="Broad Crawls.html">
+            
+                <a href="Broad Crawls.html">
+            
+                    
+                    深度爬取
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.6" data-path="Using Firefox for scraping.html">
+            
+                <a href="Using Firefox for scraping.html">
+            
+                    
+                    用火狐浏览器爬取
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.7" data-path="Using Firebug for scraping.html">
+            
+                <a href="Using Firebug for scraping.html">
+            
+                    
+                    用Firebug爬取
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter active" data-level="1.5.8" data-path="Debugging memory leaks.html">
+            
+                <a href="Debugging memory leaks.html">
+            
+                    
+                    调试内存溢出
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.9" data-path="Downloading and processing files and images.html">
+            
+                <a href="Downloading and processing files and images.html">
+            
+                    
+                    下载和处理文件和图片
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.10" data-path="Deploying Spiders.html">
+            
+                <a href="Deploying Spiders.html">
+            
+                    
+                    部署爬虫
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.11" data-path="AutoThrottle extension.html">
+            
+                <a href="AutoThrottle extension.html">
+            
+                    
+                    自动Throttle拓展
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.12" data-path="Benchmarking.html">
+            
+                <a href="Benchmarking.html">
+            
+                    
+                    Web Service
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.13" data-path="Jobs_pausing and resuming crawls.html">
+            
+                <a href="Jobs_pausing and resuming crawls.html">
+            
+                    
+                    如何暂停与继续爬取
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6" data-path="../5.EXTENDING SCRAPY/README.md">
+            
+                <span>
+            
+                    
+                    Scrapy拓展用法(EXTENDING SCRAPY)
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.6.1" data-path="../5.EXTENDING SCRAPY/Architecture overview.html">
+            
+                <a href="../5.EXTENDING SCRAPY/Architecture overview.html">
+            
+                    
+                    架构描述
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.2" data-path="../5.EXTENDING SCRAPY/Downloader Middleware.html">
+            
+                <a href="../5.EXTENDING SCRAPY/Downloader Middleware.html">
+            
+                    
+                    下载中间件
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.3" data-path="../5.EXTENDING SCRAPY/Spider Middleware.html">
+            
+                <a href="../5.EXTENDING SCRAPY/Spider Middleware.html">
+            
+                    
+                    蜘蛛中间件
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.4" data-path="../5.EXTENDING SCRAPY/Extensions.html">
+            
+                <a href="../5.EXTENDING SCRAPY/Extensions.html">
+            
+                    
+                    拓展
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.5" data-path="../5.EXTENDING SCRAPY/Core API.html">
+            
+                <a href="../5.EXTENDING SCRAPY/Core API.html">
+            
+                    
+                    主要API
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.6" data-path="../5.EXTENDING SCRAPY/Signals.html">
+            
+                <a href="../5.EXTENDING SCRAPY/Signals.html">
+            
+                    
+                    信号
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7" data-path="../6.ALL THE REST/README.md">
+            
+                <span>
+            
+                    
+                    杂项(ALL THE REST)
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.7.1" data-path="../6.ALL THE REST/Question.html">
+            
+                <a href="../6.ALL THE REST/Question.html">
+            
+                    
+                    疑问
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+
+    
+
+    <li class="divider"></li>
+
+    <li>
+        <a href="https://www.gitbook.com" target="blank" class="gitbook-link">
+            Published with GitBook
+        </a>
+    </li>
+</ul>
+
+
+                </nav>
+            
+        
+    </div>
+
+    <div class="book-body">
+        
+            <div class="body-inner">
+                
+                    
+
+<div class="book-header" role="navigation">
+    
+
+    <!-- Title -->
+    <h1>
+        <i class="fa fa-circle-o-notch fa-spin"></i>
+        <a href=".." >调试内存溢出</a>
+    </h1>
+</div>
+
+
+
+
+                    <div class="page-wrapper" tabindex="-1" role="main">
+                        <div class="page-inner">
+                            
+<div id="book-search-results">
+    <div class="search-noresults">
+    
+                                <section class="normal markdown-section">
+                                
+                                <h1 id="&#x8C03;&#x8BD5;&#x5185;&#x5B58;&#x6EA2;&#x51FA;">&#x8C03;&#x8BD5;&#x5185;&#x5B58;&#x6EA2;&#x51FA;</h1>
+<p>&#x5728;Scrapy&#x4E2D;&#xFF0C;&#x7C7B;&#x4F3C;Requests, Response&#x53CA;Items&#x7684;&#x5BF9;&#x8C61;&#x5177;&#x6709;&#x6709;&#x9650;&#x7684;&#x751F;&#x547D;&#x5468;&#x671F;: &#x4ED6;&#x4EEC;&#x88AB;&#x521B;&#x5EFA;&#xFF0C;&#x4F7F;&#x7528;&#xFF0C;&#x6700;&#x540E;&#x88AB;&#x9500;&#x6BC1;&#x3002;</p>
+<p>&#x8FD9;&#x4E9B;&#x5BF9;&#x8C61;&#x4E2D;&#xFF0C;Request&#x7684;&#x751F;&#x547D;&#x5468;&#x671F;&#x5E94;&#x8BE5;&#x662F;&#x6700;&#x957F;&#x7684;&#xFF0C;&#x5176;&#x4F1A;&#x5728;&#x8C03;&#x5EA6;&#x961F;&#x5217;(Scheduler queue)&#x4E2D;&#x4E00;&#x76F4;&#x7B49;&#x5F85;&#xFF0C;&#x76F4;&#x5230;&#x88AB;&#x5904;&#x7406;&#x3002; &#x66F4;&#x591A;&#x5185;&#x5BB9;&#x8BF7;&#x53C2;&#x8003; <a href="http://scrapy-chs.readthedocs.io/zh_CN/0.24/topics/architecture.html#topics-architecture" target="_blank">&#x67B6;&#x6784;&#x6982;&#x89C8;</a> &#x3002;</p>
+<p>&#x7531;&#x4E8E;&#x8FD9;&#x4E9B;Scrapy&#x5BF9;&#x8C61;&#x62E5;&#x6709;&#x5F88;&#x957F;&#x7684;&#x751F;&#x547D;&#xFF0C;&#x56E0;&#x6B64;&#x5C06;&#x8FD9;&#x4E9B;&#x5BF9;&#x8C61;&#x5B58;&#x50A8;&#x5728;&#x5185;&#x5B58;&#x800C;&#x6CA1;&#x6709;&#x6B63;&#x786E;&#x91CA;&#x653E;&#x7684;&#x5371;&#x9669;&#x603B;&#x662F;&#x5B58;&#x5728;&#x3002; &#x800C;&#x8FD9;&#x5BFC;&#x81F4;&#x4E86;&#x6240;&#x8C13;&#x7684;&#x201D;&#x5185;&#x5B58;&#x6CC4;&#x9732;&#x201D;&#x3002;</p>
+<p>&#x4E3A;&#x4E86;&#x5E2E;&#x52A9;&#x8C03;&#x8BD5;&#x5185;&#x5B58;&#x6CC4;&#x9732;&#xFF0C;Scrapy&#x63D0;&#x4F9B;&#x4E86;&#x8DDF;&#x8E2A;&#x5BF9;&#x8C61;&#x5F15;&#x7528;&#x7684;&#x673A;&#x5236;&#xFF0C;&#x53EB;&#x505A; <a href="http://scrapy-chs.readthedocs.io/zh_CN/0.24/topics/leaks.html#topics-leaks-trackrefs" target="_blank">trackref</a>&#xFF0C; &#x6216;&#x8005;&#x60A8;&#x4E5F;&#x53EF;&#x4EE5;&#x4F7F;&#x7528;&#x7B2C;&#x4E09;&#x65B9;&#x63D0;&#x4F9B;&#x7684;&#x66F4;&#x5148;&#x8FDB;&#x5185;&#x5B58;&#x8C03;&#x8BD5;&#x5E93; <a href="http://scrapy-chs.readthedocs.io/zh_CN/0.24/topics/leaks.html#topics-leaks-guppy" target="_blank">Guppy</a> (&#x66F4;&#x591A;&#x5185;&#x5BB9;&#x8BF7;&#x67E5;&#x770B;&#x4E0B;&#x9762;)&#x3002;&#x800C;&#x8FD9;&#x90FD;&#x5FC5;&#x987B;&#x5728; <a href="http://scrapy-chs.readthedocs.io/zh_CN/0.24/topics/telnetconsole.html#topics-telnetconsole" target="_blank">Telnet&#x7EC8;&#x7AEF;</a> &#x4E2D;&#x4F7F;&#x7528;&#x3002;</p>
+<h2 id="&#x5185;&#x5B58;&#x6CC4;&#x9732;&#x7684;&#x5E38;&#x89C1;&#x539F;&#x56E0;">&#x5185;&#x5B58;&#x6CC4;&#x9732;&#x7684;&#x5E38;&#x89C1;&#x539F;&#x56E0;</h2>
+<p>&#x5185;&#x5B58;&#x6CC4;&#x9732;&#x7ECF;&#x5E38;&#x662F;&#x7531;&#x4E8E;Scrapy&#x5F00;&#x53D1;&#x8005;&#x5728;Requests&#x4E2D;(&#x6709;&#x610F;&#x6216;&#x65E0;&#x610F;)&#x4F20;&#x9012;&#x5BF9;&#x8C61;&#x7684;&#x5F15;&#x7528;(&#x4F8B;&#x5982;&#xFF0C;&#x4F7F;&#x7528; <a href="http://scrapy-chs.readthedocs.io/zh_CN/0.24/topics/request-response.html#scrapy.http.Request.meta" target="_blank"><code>meta</code></a> &#x5C5E;&#x6027;&#x6216;request&#x56DE;&#x8C03;&#x51FD;&#x6570;)&#xFF0C;&#x4F7F;&#x5F97;&#x8BE5;&#x5BF9;&#x8C61;&#x7684;&#x751F;&#x547D;&#x5468;&#x671F;&#x4E0E; Request&#x7684;&#x751F;&#x547D;&#x5468;&#x671F;&#x6240;&#x7ED1;&#x5B9A;&#x3002;&#x8FD9;&#x662F;&#x76EE;&#x524D;&#x4E3A;&#x6B62;&#x6700;&#x5E38;&#x89C1;&#x7684;&#x5185;&#x5B58;&#x6CC4;&#x9732;&#x7684;&#x539F;&#x56E0;&#xFF0C; &#x540C;&#x65F6;&#x5BF9;&#x65B0;&#x624B;&#x6765;&#x8BF4;&#x4E5F;&#x662F;&#x4E00;&#x4E2A;&#x6BD4;&#x8F83;&#x96BE;&#x8C03;&#x8BD5;&#x7684;&#x95EE;&#x9898;&#x3002;</p>
+<p>&#x5728;&#x5927;&#x9879;&#x76EE;&#x4E2D;&#xFF0C;spider&#x662F;&#x7531;&#x4E0D;&#x540C;&#x7684;&#x4EBA;&#x6240;&#x7F16;&#x5199;&#x7684;&#x3002;&#x800C;&#x8FD9;&#x5176;&#x4E2D;&#x6709;&#x7684;spider&#x53EF;&#x80FD;&#x662F;&#x6709;&#x201D;&#x6CC4;&#x9732;&#x7684;&#x201D;&#xFF0C; &#x5F53;&#x6240;&#x6709;&#x7684;&#x722C;&#x866B;&#x540C;&#x65F6;&#x8FD0;&#x884C;&#x65F6;&#xFF0C;&#x8FD9;&#x4E9B;&#x5F71;&#x54CD;&#x4E86;&#x5176;&#x4ED6;(&#x5199;&#x597D;)&#x7684;&#x722C;&#x866B;&#xFF0C;&#x6700;&#x7EC8;&#xFF0C;&#x5F71;&#x54CD;&#x4E86;&#x6574;&#x4E2A;&#x722C;&#x53D6;&#x8FDB;&#x7A0B;&#x3002;</p>
+<p>&#x5982;&#x679C;&#x60A8;&#x6CA1;&#x6709;&#x6B63;&#x786E;&#x91CA;&#x653E;&#xFF08;&#x4EE5;&#x524D;&#x5206;&#x914D;&#x7684;&#xFF09;&#x8D44;&#x6E90;&#xFF0C;&#x6CC4;&#x6F0F;&#x4E5F;&#x53EF;&#x80FD;&#x6765;&#x81EA;&#x60A8;&#x7F16;&#x5199;&#x7684;&#x81EA;&#x5B9A;&#x4E49;&#x4E2D;&#x95F4;&#x4EF6;&#xFF0C;&#x7BA1;&#x9053;&#x6216;&#x6269;&#x5C55;&#x3002;&#x4F8B;&#x5982;&#xFF0C;&#x5982;&#x679C;&#x60A8;<a href="https://doc.scrapy.org/en/1.5/topics/practices.html#run-multiple-spiders" target="_blank">&#x4E3A;&#x6BCF;&#x4E2A;&#x8FDB;&#x7A0B;</a>&#x8FD0;&#x884C;<a href="https://doc.scrapy.org/en/1.5/topics/practices.html#run-multiple-spiders" target="_blank">&#x591A;&#x4E2A;&#x8718;&#x86DB;</a>&#xFF0C;&#x5206;&#x914D;&#x8D44;&#x6E90;<a href="https://doc.scrapy.org/en/1.5/topics/signals.html#std:signal-spider_opened" target="_blank"><code>spider_opened</code></a> &#x4F46;&#x4E0D;&#x91CA;&#x653E;&#x5B83;&#x4EEC;<a href="https://doc.scrapy.org/en/1.5/topics/signals.html#std:signal-spider_closed" target="_blank"><code>spider_closed</code></a>&#x53EF;&#x80FD;&#x4F1A;&#x5BFC;&#x81F4;&#x95EE;&#x9898;&#x3002;</p>
+<h3 id="&#x8BF7;&#x6C42;&#x8FC7;&#x591A;&#xFF1F;">&#x8BF7;&#x6C42;&#x8FC7;&#x591A;&#xFF1F;</h3>
+<p>&#x9ED8;&#x8BA4;&#x60C5;&#x51B5;&#x4E0B;&#xFF0C;Scrapy&#x5C06;&#x8BF7;&#x6C42;&#x961F;&#x5217;&#x4FDD;&#x5B58;&#x5728;&#x5185;&#x5B58;&#x4E2D;; &#x5B83;&#x5305;&#x542B; <a href="https://doc.scrapy.org/en/1.5/topics/request-response.html#scrapy.http.Request" target="_blank"><code>Request</code></a>&#x5BF9;&#x8C61;&#x548C;Request&#x5C5E;&#x6027;&#x4E2D;&#x5F15;&#x7528;&#x7684;&#x6240;&#x6709;&#x5BF9;&#x8C61;&#xFF08;&#x4F8B;&#x5982;in <a href="https://doc.scrapy.org/en/1.5/topics/request-response.html#scrapy.http.Request.meta" target="_blank"><code>meta</code></a>&#xFF09;&#x3002;&#x867D;&#x7136;&#x4E0D;&#x4E00;&#x5B9A;&#x662F;&#x6CC4;&#x6F0F;&#xFF0C;&#x4F46;&#x8FD9;&#x53EF;&#x80FD;&#x9700;&#x8981;&#x5F88;&#x591A;&#x5185;&#x5B58;&#x3002;&#x542F;&#x7528; <a href="https://doc.scrapy.org/en/1.5/topics/jobs.html#topics-jobs" target="_blank">&#x6301;&#x4E45;&#x4F5C;&#x4E1A;&#x961F;&#x5217;</a>&#x53EF;&#x4EE5;&#x5E2E;&#x52A9;&#x63A7;&#x5236;&#x5185;&#x5B58;&#x4F7F;&#x7528;&#x60C5;&#x51B5;&#x3002;</p>
+<h2 id="&#x4F7F;&#x7528;-trackref-&#x8C03;&#x8BD5;&#x5185;&#x5B58;&#x6CC4;&#x9732;">&#x4F7F;&#x7528; <code>trackref</code> &#x8C03;&#x8BD5;&#x5185;&#x5B58;&#x6CC4;&#x9732;</h2>
+<p><code>trackref</code> &#x662F;Scrapy&#x63D0;&#x4F9B;&#x7528;&#x4E8E;&#x8C03;&#x8BD5;&#x5927;&#x90E8;&#x5206;&#x5185;&#x5B58;&#x6CC4;&#x9732;&#x60C5;&#x51B5;&#x7684;&#x6A21;&#x5757;&#x3002; &#x7B80;&#x5355;&#x6765;&#x8BF4;&#xFF0C;&#x5176;&#x8FFD;&#x8E2A;&#x4E86;&#x6240;&#x6709;&#x6D3B;&#x52A8;(live)&#x7684;Request, Request, Item&#x53CA;Selector&#x5BF9;&#x8C61;&#x7684;&#x5F15;&#x7528;&#x3002;</p>
+<p>&#x60A8;&#x53EF;&#x4EE5;&#x8FDB;&#x5165;telnet&#x7EC8;&#x7AEF;&#x5E76;&#x901A;&#x8FC7; <code>prefs()</code> &#x529F;&#x80FD;&#x6765;&#x68C0;&#x67E5;&#x591A;&#x5C11;(&#x4E0A;&#x9762;&#x6240;&#x63D0;&#x5230;&#x7684;)&#x6D3B;&#x8DC3;(alive)&#x5BF9;&#x8C61;&#x3002; <code>pref()</code> &#x662F; <a href="http://scrapy-chs.readthedocs.io/zh_CN/0.24/topics/leaks.html#scrapy.utils.trackref.print_live_refs" target="_blank"><code>print_live_refs()</code></a> &#x529F;&#x80FD;&#x7684;&#x5F15;&#x7528;:</p>
+<pre><code>telnet localhost 6023
+
+&gt;&gt;&gt; prefs()
+Live References
+
+ExampleSpider                       1   oldest: 15s ago
+HtmlResponse                       10   oldest: 1s ago
+Selector                            2   oldest: 0s ago
+FormRequest                       878   oldest: 7s ago
+</code></pre><p>&#x6B63;&#x5982;&#x6240;&#x89C1;&#xFF0C;&#x62A5;&#x544A;&#x4E5F;&#x5C55;&#x73B0;&#x4E86;&#x6BCF;&#x4E2A;&#x7C7B;&#x4E2D;&#x6700;&#x8001;&#x7684;&#x5BF9;&#x8C61;&#x7684;&#x65F6;&#x95F4;(age)&#x3002;</p>
+<p>&#x5982;&#x679C;&#x60A8;&#x6709;&#x5185;&#x5B58;&#x6CC4;&#x9732;&#xFF0C;&#x90A3;&#x60A8;&#x80FD;&#x627E;&#x5230;&#x54EA;&#x4E2A;spider&#x6B63;&#x5728;&#x6CC4;&#x9732;&#x7684;&#x673A;&#x4F1A;&#x662F;&#x67E5;&#x770B;&#x6700;&#x8001;&#x7684;request&#x6216;response&#x3002; &#x60A8;&#x53EF;&#x4EE5;&#x4F7F;&#x7528; <a href="http://scrapy-chs.readthedocs.io/zh_CN/0.24/topics/leaks.html#scrapy.utils.trackref.get_oldest" target="_blank"><code>get_oldest()</code></a> &#x65B9;&#x6CD5;&#x6765;&#x83B7;&#x53D6;&#x6BCF;&#x4E2A;&#x7C7B;&#x4E2D;&#x6700;&#x8001;&#x7684;&#x5BF9;&#x8C61;&#xFF0C; &#x6B63;&#x5982;&#x6B64;&#x6240;&#x793A;(&#x5728;&#x7EC8;&#x7AEF;&#x4E2D;)(&#x539F;&#x6587;&#x6863;&#x6CA1;&#x6709;&#x6837;&#x4F8B;)&#x3002;</p>
+<h3 id="&#x54EA;&#x4E9B;&#x5BF9;&#x8C61;&#x88AB;&#x8FFD;&#x8E2A;&#x4E86;">&#x54EA;&#x4E9B;&#x5BF9;&#x8C61;&#x88AB;&#x8FFD;&#x8E2A;&#x4E86;?</h3>
+<p><code>trackref</code> &#x8FFD;&#x8E2A;&#x7684;&#x5BF9;&#x8C61;&#x5305;&#x62EC;&#x4EE5;&#x4E0B;&#x7C7B;(&#x53CA;&#x5176;&#x5B50;&#x7C7B;)&#x7684;&#x5BF9;&#x8C61;:</p>
+<ul>
+<li><code>scrapy.http.Request</code></li>
+<li><code>scrapy.http.Response</code></li>
+<li><code>scrapy.item.Item</code></li>
+<li><code>scrapy.selector.Selector</code></li>
+<li><code>scrapy.spider.Spider</code></li>
+</ul>
+<h3 id="&#x771F;&#x5B9E;&#x4F8B;&#x5B50;">&#x771F;&#x5B9E;&#x4F8B;&#x5B50;</h3>
+<p>&#x8BA9;&#x6211;&#x4EEC;&#x6765;&#x770B;&#x4E00;&#x4E2A;&#x5047;&#x8BBE;&#x7684;&#x5177;&#x6709;&#x5185;&#x5B58;&#x6CC4;&#x9732;&#x7684;&#x51C6;&#x786E;&#x4F8B;&#x5B50;&#x3002;</p>
+<p>&#x5047;&#x5982;&#x6211;&#x4EEC;&#x6709;&#x4E9B;spider&#x7684;&#x4EE3;&#x7801;&#x4E2D;&#x6709;&#x4E00;&#x884C;&#x7C7B;&#x4F3C;&#x4E8E;&#x8FD9;&#x6837;&#x7684;&#x4EE3;&#x7801;:</p>
+<pre><code>return Request(&quot;http://www.somenastyspider.com/product.php?pid=%d&quot; % product_id,
+    callback=self.parse, meta={referer: response})
+</code></pre><p>&#x4EE3;&#x7801;&#x4E2D;&#x5728;request&#x4E2D;&#x4F20;&#x9012;&#x4E86;&#x4E00;&#x4E2A;response&#x7684;&#x5F15;&#x7528;&#xFF0C;&#x4F7F;&#x5F97;reponse&#x7684;&#x751F;&#x547D;&#x5468;&#x671F;&#x4E0E;request&#x6240;&#x7ED1;&#x5B9A;&#xFF0C; &#x8FDB;&#x800C;&#x9020;&#x6210;&#x4E86;&#x5185;&#x5B58;&#x6CC4;&#x9732;&#x3002;</p>
+<p>&#x8BA9;&#x6211;&#x4EEC;&#x6765;&#x770B;&#x770B;&#x5982;&#x4F55;&#x4F7F;&#x7528; <code>trackref</code> &#x5DE5;&#x5177;&#x6765;&#x53D1;&#x73B0;&#x54EA;&#x4E00;&#x4E2A;&#x662F;&#x6709;&#x95EE;&#x9898;&#x7684;spider(&#x5F53;&#x7136;&#x662F;&#x5728;&#x4E0D;&#x77E5;&#x9053;&#x4EFB;&#x4F55;&#x7684;&#x524D;&#x63D0;&#x7684;&#x60C5;&#x51B5;&#x4E0B;)&#x3002;</p>
+<p>&#x5F53;crawler&#x8FD0;&#x884C;&#x4E86;&#x4E00;&#x5C0F;&#x9635;&#x5B50;&#x540E;&#xFF0C;&#x6211;&#x4EEC;&#x53D1;&#x73B0;&#x5185;&#x5B58;&#x5360;&#x7528;&#x589E;&#x957F;&#x4E86;&#x5F88;&#x591A;&#x3002; &#x8FD9;&#x65F6;&#x5019;&#x6211;&#x4EEC;&#x8FDB;&#x5165;telnet&#x7EC8;&#x7AEF;&#xFF0C;&#x67E5;&#x770B;&#x6D3B;&#x8DC3;(live)&#x7684;&#x5F15;&#x7528;:</p>
+<pre><code>&gt;&gt;&gt; prefs()
+Live References
+
+SomenastySpider                     1   oldest: 15s ago
+HtmlResponse                     3890   oldest: 265s ago
+Selector                            2   oldest: 0s ago
+Request                          3878   oldest: 250s ago
+</code></pre><p>&#x4E8B;&#x5B9E;&#x4E0A;&#x6709;&#x5F88;&#x591A;&#x73B0;&#x573A;responses&#xFF08;&#x5E76;&#x4E14;&#x5B83;&#x4EEC;&#x592A;&#x65E7;&#x4E86;&#xFF09;&#x80AF;&#x5B9A;&#x662F;&#x53EF;&#x7591;&#x7684;&#xFF0C;&#x56E0;&#x4E3A;&#x4E0E;responses&#x76F8;&#x6BD4;&#xFF0C;Requests&#x5E94;&#x8BE5;&#x5177;&#x6709;&#x76F8;&#x5BF9;&#x8F83;&#x77ED;&#x7684;&#x751F;&#x547D;&#x5468;&#x671F;&#x3002;responses&#x7684;&#x6570;&#x91CF;&#x4E0E;Requests&#x7684;&#x6570;&#x91CF;&#x76F8;&#x4F3C;&#xFF0C;&#x56E0;&#x6B64;&#x770B;&#x8D77;&#x6765;&#x5B83;&#x4EEC;&#x4EE5;&#x67D0;&#x79CD;&#x65B9;&#x5F0F;&#x76F8;&#x5173;&#x8054;&#x3002;&#x6211;&#x4EEC;&#x73B0;&#x5728;&#x53EF;&#x4EE5;&#x53BB;&#x68C0;&#x67E5;&#x8718;&#x86DB;&#x7684;&#x4EE3;&#x7801;&#x6765;&#x53D1;&#x73B0;&#x4EA7;&#x751F;&#x6CC4;&#x6F0F;&#x7684;&#x4EE4;&#x4EBA;&#x8BA8;&#x538C;&#x7684;&#x7EBF;&#xFF08;&#x5728;&#x8BF7;&#x6C42;&#x4E2D;&#x4F20;&#x9012;&#x54CD;&#x5E94;&#x5F15;&#x7528;&#xFF09;&#x3002;</p>
+<p>&#x6709;&#x65F6;&#x5019;&#x5173;&#x4E8E;&#x6D3B;&#x52A8;&#x5BF9;&#x8C61;&#x7684;&#x989D;&#x5916;&#x4FE1;&#x606F;&#x4F1A;&#x6709;&#x6240;&#x5E2E;&#x52A9;&#x3002;&#x8BA9;&#x6211;&#x4EEC;&#x6765;&#x68C0;&#x67E5;&#x6700;&#x8001;&#x7684;&#x56DE;&#x5E94;&#xFF1A;</p>
+<pre><code>&gt;&gt;&gt; from scrapy.utils.trackref import get_oldest
+&gt;&gt;&gt; r = get_oldest(&apos;HtmlResponse&apos;)
+&gt;&gt;&gt; r.url
+&apos;http://www.somenastyspider.com/product.php?pid=123&apos;
+</code></pre><p>&#x5982;&#x679C;&#x4F60;&#x60F3;&#x904D;&#x5386;&#x6240;&#x6709;&#x7684;&#x5BF9;&#x8C61;&#xFF0C;&#x800C;&#x4E0D;&#x662F;&#x83B7;&#x53D6;&#x6700;&#x8001;&#x7684;&#x5BF9;&#x8C61;&#xFF0C;&#x4F60;&#x53EF;&#x4EE5;&#x4F7F;&#x7528;&#x8FD9;&#x4E2A;<a href="https://doc.scrapy.org/en/1.5/topics/leaks.html#scrapy.utils.trackref.iter_all" target="_blank"><code>scrapy.utils.trackref.iter_all()</code></a>&#x51FD;&#x6570;&#xFF1A;</p>
+<pre><code>&gt;&gt;&gt; from scrapy.utils.trackref import iter_all
+&gt;&gt;&gt; [r.url for r in iter_all(&apos;HtmlResponse&apos;)]
+[&apos;http://www.somenastyspider.com/product.php?pid=123&apos;,
+ &apos;http://www.somenastyspider.com/product.php?pid=584&apos;,
+...
+</code></pre><h3 id="&#x5F88;&#x591A;spider">&#x5F88;&#x591A;spider?</h3>
+<p>&#x5982;&#x679C;&#x60A8;&#x7684;&#x9879;&#x76EE;&#x6709;&#x5F88;&#x591A;&#x7684;spider&#xFF0C;<code>prefs()</code> &#x7684;&#x8F93;&#x51FA;&#x4F1A;&#x53D8;&#x5F97;&#x5F88;&#x96BE;&#x9605;&#x8BFB;&#x3002;&#x9488;&#x5BF9;&#x4E8E;&#x6B64;&#xFF0C; &#x8BE5;&#x65B9;&#x6CD5;&#x5177;&#x6709; <code>ignore</code> &#x53C2;&#x6570;&#xFF0C;&#x7528;&#x4E8E;&#x5FFD;&#x7565;&#x7279;&#x5B9A;&#x7684;&#x7C7B;(&#x53CA;&#x5176;&#x5B50;&#x7C7B;)&#x3002;&#x4F8B;&#x5982;&#xFF0C;&#x8FD9;&#x4E0D;&#x4F1A;&#x663E;&#x793A;&#x4EFB;&#x4F55;&#x5BF9;&#x8718;&#x86DB;&#x7684;&#x5B9E;&#x65F6;&#x5F15;&#x7528;&#xFF1A;</p>
+<pre><code>&gt;&gt;&gt; from scrapy.spiders import Spider
+&gt;&gt;&gt; prefs(ignore=Spider)
+</code></pre><h3 id="scrapyutilstrackref&#x6A21;&#x5757;">scrapy.utils.trackref&#x6A21;&#x5757;</h3>
+<p>&#x4EE5;&#x4E0B;&#x662F; <a href="http://scrapy-chs.readthedocs.io/zh_CN/0.24/topics/leaks.html#module-scrapy.utils.trackref" target="_blank"><code>trackref</code></a> &#x6A21;&#x5757;&#x4E2D;&#x53EF;&#x7528;&#x7684;&#x65B9;&#x6CD5;&#x3002;</p>
+<ul>
+<li><p><em>class</em><code>scrapy.utils.trackref.object_ref</code></p>
+<p>&#x5982;&#x679C;&#x60A8;&#x60F3;&#x901A;&#x8FC7; <code>trackref</code> &#x6A21;&#x5757;&#x8FFD;&#x8E2A;&#x6D3B;&#x8DC3;&#x7684;&#x5B9E;&#x4F8B;&#xFF0C;&#x7EE7;&#x627F;&#x8BE5;&#x7C7B;(&#x800C;&#x4E0D;&#x662F;&#x5BF9;&#x8C61;)&#x3002;</p>
+</li>
+</ul>
+<ul>
+<li><p><code>scrapy.utils.trackref.print_live_refs</code>(<em>class_name</em>, <em>ignore=NoneType</em>)</p>
+<p>&#x6253;&#x5370;&#x6D3B;&#x8DC3;&#x5F15;&#x7528;&#x7684;&#x62A5;&#x544A;&#xFF0C;&#x4EE5;&#x7C7B;&#x540D;&#x5206;&#x7C7B;&#x3002;&#x53C2;&#x6570;:<strong>ignore</strong> (<em>&#x7C7B;&#x6216;&#x8005;&#x7C7B;&#x7684;&#x5143;&#x7EC4;</em>) &#x2013; &#x5982;&#x679C;&#x7ED9;&#x5B9A;&#xFF0C;&#x6240;&#x6709;&#x6307;&#x5B9A;&#x7C7B;(&#x6216;&#x8005;&#x7C7B;&#x7684;&#x5143;&#x7EC4;)&#x7684;&#x5BF9;&#x8C61;&#x5C06;&#x4F1A;&#x88AB;&#x5FFD;&#x7565;&#x3002;</p>
+</li>
+</ul>
+<ul>
+<li><p><code>scrapy.utils.trackref.get_oldest</code>(<em>class_name</em>)</p>
+<p>&#x8FD4;&#x56DE;&#x7ED9;&#x5B9A;&#x7C7B;&#x540D;&#x7684;&#x6700;&#x8001;&#x6D3B;&#x8DC3;(alive)&#x5BF9;&#x8C61;&#xFF0C;&#x5982;&#x679C;&#x6CA1;&#x6709;&#x5219;&#x8FD4;&#x56DE; <code>None</code> &#x3002;&#x9996;&#x5148;&#x4F7F;&#x7528;<a href="http://scrapy-chs.readthedocs.io/zh_CN/0.24/topics/leaks.html#scrapy.utils.trackref.print_live_refs" target="_blank"><code>print_live_refs()</code></a> &#x6765;&#x83B7;&#x53D6;&#x6BCF;&#x4E2A;&#x7C7B;&#x6240;&#x8DDF;&#x8E2A;&#x7684;&#x6240;&#x6709;&#x6D3B;&#x8DC3;(live)&#x5BF9;&#x8C61;&#x7684;&#x5217;&#x8868;&#x3002;</p>
+</li>
+</ul>
+<ul>
+<li><p><code>scrapy.utils.trackref.iter_all</code>(<em>class_name</em>)</p>
+<p>&#x8FD4;&#x56DE;&#x4E00;&#x4E2A;&#x80FD;&#x7ED9;&#x5B9A;&#x7C7B;&#x540D;&#x7684;&#x6240;&#x6709;&#x6D3B;&#x8DC3;&#x5BF9;&#x8C61;&#x7684;&#x8FED;&#x4EE3;&#x5668;&#xFF0C;&#x5982;&#x679C;&#x6CA1;&#x6709;&#x5219;&#x8FD4;&#x56DE; <code>None</code>&#x3002;&#x9996;&#x5148;&#x4F7F;&#x7528; <a href="http://scrapy-chs.readthedocs.io/zh_CN/0.24/topics/leaks.html#scrapy.utils.trackref.print_live_refs" target="_blank"><code>print_live_refs()</code></a> &#x6765;&#x83B7;&#x53D6;&#x6BCF;&#x4E2A;&#x7C7B;&#x6240;&#x8DDF;&#x8E2A;&#x7684;&#x6240;&#x6709;&#x6D3B;&#x8DC3;(live)&#x5BF9;&#x8C61;&#x7684;&#x5217;&#x8868;&#x3002;</p>
+</li>
+</ul>
+<h2 id="&#x4F7F;&#x7528;guppy&#x8C03;&#x8BD5;&#x5185;&#x5B58;&#x6CC4;&#x9732;">&#x4F7F;&#x7528;Guppy&#x8C03;&#x8BD5;&#x5185;&#x5B58;&#x6CC4;&#x9732;</h2>
+<p><code>trackref</code> &#x63D0;&#x4F9B;&#x4E86;&#x8FFD;&#x8E2A;&#x5185;&#x5B58;&#x6CC4;&#x9732;&#x975E;&#x5E38;&#x65B9;&#x4FBF;&#x7684;&#x673A;&#x5236;&#xFF0C;&#x5176;&#x4EC5;&#x4EC5;&#x8FFD;&#x8E2A;&#x4E86;&#x6BD4;&#x8F83;&#x53EF;&#x80FD;&#x5BFC;&#x81F4;&#x5185;&#x5B58;&#x6CC4;&#x9732;&#x7684;&#x5BF9;&#x8C61; (Requests, Response, Items&#x53CA;Selectors)&#x3002;&#x7136;&#x800C;&#xFF0C;&#x5185;&#x5B58;&#x6CC4;&#x9732;&#x4E5F;&#x6709;&#x53EF;&#x80FD;&#x6765;&#x81EA;&#x5176;&#x4ED6;(&#x66F4;&#x4E3A;&#x9690;&#x853D;&#x7684;)&#x5BF9;&#x8C61;&#x3002; &#x5982;&#x679C;&#x662F;&#x56E0;&#x4E3A;&#x8FD9;&#x4E2A;&#x539F;&#x56E0;&#xFF0C;&#x901A;&#x8FC7; <code>trackref</code> &#x5219;&#x65E0;&#x6CD5;&#x627E;&#x5230;&#x6CC4;&#x9732;&#x70B9;&#xFF0C;&#x60A8;&#x4ECD;&#x7136;&#x6709;&#x5176;&#x4ED6;&#x5DE5;&#x5177;: <a href="http://pypi.python.org/pypi/guppy" target="_blank">Guppy library</a> &#x3002;</p>
+<p>&#x5982;&#x679C;&#x4F7F;&#x7528; <code>setuptools</code> , &#x60A8;&#x53EF;&#x4EE5;&#x901A;&#x8FC7;&#x4E0B;&#x5217;&#x547D;&#x4EE4;&#x5B89;&#x88C5;Guppy:</p>
+<pre><code>easy_install guppy
+</code></pre><p>telnet&#x7EC8;&#x7AEF;&#x4E5F;&#x63D0;&#x4F9B;&#x4E86;&#x5FEB;&#x6377;&#x65B9;&#x5F0F;(<code>hpy</code>)&#x6765;&#x8BBF;&#x95EE;Guppy&#x5806;&#x5BF9;&#x8C61;(heap objects)&#x3002; &#x4E0B;&#x9762;&#x7ED9;&#x51FA;&#x4E86;&#x67E5;&#x770B;&#x5806;&#x4E2D;&#x6240;&#x6709;&#x53EF;&#x7528;&#x7684;Python&#x5BF9;&#x8C61;&#x7684;&#x4F8B;&#x5B50;:</p>
+<pre><code>&gt;&gt;&gt; x = hpy.heap()
+&gt;&gt;&gt; x.bytype
+Partition of a set of 297033 objects. Total size = 52587824 bytes.
+ Index  Count   %     Size   % Cumulative  % Type
+     0  22307   8 16423880  31  16423880  31 dict
+     1 122285  41 12441544  24  28865424  55 str
+     2  68346  23  5966696  11  34832120  66 tuple
+     3    227   0  5836528  11  40668648  77 unicode
+     4   2461   1  2222272   4  42890920  82 type
+     5  16870   6  2024400   4  44915320  85 function
+     6  13949   5  1673880   3  46589200  89 types.CodeType
+     7  13422   5  1653104   3  48242304  92 list
+     8   3735   1  1173680   2  49415984  94 _sre.SRE_Pattern
+     9   1209   0   456936   1  49872920  95 scrapy.http.headers.Headers
+&lt;1676 more rows. Type e.g. &apos;_.more&apos; to view.&gt;
+</code></pre><p>&#x60A8;&#x53EF;&#x4EE5;&#x770B;&#x5230;&#x5927;&#x90E8;&#x5206;&#x7684;&#x7A7A;&#x95F4;&#x88AB;&#x5B57;&#x5178;&#x6240;&#x4F7F;&#x7528;&#x3002;&#x63A5;&#x7740;&#xFF0C;&#x5982;&#x679C;&#x60A8;&#x60F3;&#x8981;&#x67E5;&#x770B;&#x54EA;&#x4E9B;&#x5C5E;&#x6027;&#x5F15;&#x7528;&#x4E86;&#x8FD9;&#x4E9B;&#x5B57;&#x5178;&#xFF0C; &#x60A8;&#x53EF;&#x4EE5;:</p>
+<pre><code>&gt;&gt;&gt; x.bytype[0].byvia
+Partition of a set of 22307 objects. Total size = 16423880 bytes.
+ Index  Count   %     Size   % Cumulative  % Referred Via:
+     0  10982  49  9416336  57   9416336  57 &apos;.__dict__&apos;
+     1   1820   8  2681504  16  12097840  74 &apos;.__dict__&apos;, &apos;.func_globals&apos;
+     2   3097  14  1122904   7  13220744  80
+     3    990   4   277200   2  13497944  82 &quot;[&apos;cookies&apos;]&quot;
+     4    987   4   276360   2  13774304  84 &quot;[&apos;cache&apos;]&quot;
+     5    985   4   275800   2  14050104  86 &quot;[&apos;meta&apos;]&quot;
+     6    897   4   251160   2  14301264  87 &apos;[2]&apos;
+     7      1   0   196888   1  14498152  88 &quot;[&apos;moduleDict&apos;]&quot;, &quot;[&apos;modules&apos;]&quot;
+     8    672   3   188160   1  14686312  89 &quot;[&apos;cb_kwargs&apos;]&quot;
+     9     27   0   155016   1  14841328  90 &apos;[1]&apos;
+&lt;333 more rows. Type e.g. &apos;_.more&apos; to view.&gt;
+</code></pre><p>&#x5982;&#x4E0A;&#x6240;&#x793A;&#xFF0C;Guppy&#x6A21;&#x5757;&#x5341;&#x5206;&#x5F3A;&#x5927;&#xFF0C;&#x4E0D;&#x8FC7;&#x4E5F;&#x9700;&#x8981;&#x4E00;&#x4E9B;&#x5173;&#x4E8E;Python&#x5185;&#x90E8;&#x7684;&#x77E5;&#x8BC6;&#x3002;&#x5173;&#x4E8E;Guppy&#x7684;&#x66F4;&#x591A;&#x5185;&#x5BB9;&#x8BF7;&#x53C2;&#x8003; <a href="http://guppy-pe.sourceforge.net/" target="_blank">Guppy documentation</a>.</p>
+<h2 id="leaks-without-leaks">Leaks without leaks</h2>
+<p>&#x6709;&#x65F6;&#x5019;&#xFF0C;&#x60A8;&#x53EF;&#x80FD;&#x4F1A;&#x6CE8;&#x610F;&#x5230;Scrapy&#x8FDB;&#x7A0B;&#x7684;&#x5185;&#x5B58;&#x5360;&#x7528;&#x53EA;&#x5728;&#x589E;&#x957F;&#xFF0C;&#x4ECE;&#x4E0D;&#x4E0B;&#x964D;&#x3002;&#x4E0D;&#x5E78;&#x7684;&#x662F;&#xFF0C; &#x6709;&#x65F6;&#x5019;&#x8FD9;&#x5E76;&#x4E0D;&#x662F;Scrapy&#x6216;&#x8005;&#x60A8;&#x7684;&#x9879;&#x76EE;&#x5728;&#x6CC4;&#x9732;&#x5185;&#x5B58;&#x3002;&#x8FD9;&#x662F;&#x7531;&#x4E8E;&#x4E00;&#x4E2A;&#x5DF2;&#x77E5;(&#x4F46;&#x4E0D;&#x6709;&#x540D;)&#x7684;Python&#x95EE;&#x9898;&#x3002; Python&#x5728;&#x67D0;&#x4E9B;&#x60C5;&#x51B5;&#x4E0B;&#x53EF;&#x80FD;&#x4E0D;&#x4F1A;&#x8FD4;&#x56DE;&#x5DF2;&#x7ECF;&#x91CA;&#x653E;&#x7684;&#x5185;&#x5B58;&#x5230;&#x64CD;&#x4F5C;&#x7CFB;&#x7EDF;&#x3002;&#x5173;&#x4E8E;&#x8FD9;&#x4E2A;&#x95EE;&#x9898;&#x7684;&#x66F4;&#x591A;&#x5185;&#x5BB9;&#x8BF7;&#x770B;:</p>
+<ul>
+<li><a href="http://evanjones.ca/python-memory.html" target="_blank">Python Memory Management</a></li>
+<li><a href="http://evanjones.ca/python-memory-part2.html" target="_blank">Python Memory Management Part 2</a></li>
+<li><a href="http://evanjones.ca/python-memory-part3.html" target="_blank">Python Memory Management Part 3</a></li>
+</ul>
+<p>&#x6539;&#x8FDB;&#x65B9;&#x6848;&#x7531;Evan Jones&#x63D0;&#x51FA;&#xFF0C;&#x5728; <a href="http://evanjones.ca/memoryallocator/" target="_blank">&#x8FD9;&#x7BC7;&#x6587;&#x7AE0;</a> &#x4E2D;&#x8BE6;&#x7EC6;&#x4ECB;&#x7ECD;&#xFF0C;&#x5728;Python 2.5&#x4E2D;&#x5408;&#x5E76;&#x3002; &#x4E0D;&#x8FC7;&#x8FD9;&#x4EC5;&#x4EC5;&#x51CF;&#x5C0F;&#x4E86;&#x8FD9;&#x4E2A;&#x95EE;&#x9898;&#xFF0C;&#x5E76;&#x6CA1;&#x6709;&#x5B8C;&#x5168;&#x4FEE;&#x590D;&#x3002;&#x5F15;&#x7528;&#x8FD9;&#x7247;&#x6587;&#x7AE0;:</p>
+<blockquote>
+<p><em>&#x4E0D;&#x5E78;&#x7684;&#x662F;&#xFF0C;&#x8FD9;&#x4E2A;patch&#x4EC5;&#x4EC5;&#x4F1A;&#x91CA;&#x653E;&#x6CA1;&#x6709;&#x5728;&#x5176;&#x5185;&#x90E8;&#x5206;&#x914D;&#x5BF9;&#x8C61;&#x7684;&#x533A;&#x57DF;(arena)&#x3002;&#x8FD9;&#x610F;&#x5473;&#x7740; &#x788E;&#x7247;&#x5316;&#x662F;&#x4E00;&#x4E2A;&#x5927;&#x95EE;&#x9898;&#x3002;&#x67D0;&#x4E2A;&#x5E94;&#x7528;&#x53EF;&#x4EE5;&#x62E5;&#x6709;&#x5F88;&#x591A;&#x7A7A;&#x95F2;&#x5185;&#x5B58;&#xFF0C;&#x5206;&#x5E03;&#x5728;&#x6240;&#x6709;&#x7684;&#x533A;&#x57DF;(arena)&#x4E2D;&#xFF0C; &#x4F46;&#x662F;&#x6CA1;&#x6CD5;&#x91CA;&#x653E;&#x4EFB;&#x4F55;&#x4E00;&#x4E2A;&#x3002;&#x8FD9;&#x4E2A;&#x95EE;&#x9898;&#x5B58;&#x5728;&#x4E8E;&#x6240;&#x6709;&#x5185;&#x5B58;&#x5206;&#x914D;&#x5668;&#x4E2D;&#x3002;&#x89E3;&#x51B3;&#x8FD9;&#x4E2A;&#x95EE;&#x9898;&#x7684;&#x552F;&#x4E00;&#x529E;&#x6CD5;&#x662F; &#x8F6C;&#x5316;&#x5230;&#x4E00;&#x4E2A;&#x66F4;&#x4E3A;&#x7D27;&#x51D1;(compact)&#x7684;&#x5783;&#x573E;&#x56DE;&#x6536;&#x5668;&#xFF0C;&#x5176;&#x80FD;&#x5728;&#x5185;&#x5B58;&#x4E2D;&#x79FB;&#x52A8;&#x5BF9;&#x8C61;&#x3002; &#x8FD9;&#x9700;&#x8981;&#x5BF9;Python&#x89E3;&#x6790;&#x5668;&#x505A;&#x4E00;&#x4E2A;&#x663E;&#x8457;&#x7684;&#x4FEE;&#x6539;&#x3002;</em></p>
+</blockquote>
+<p>&#x8FD9;&#x4E2A;&#x95EE;&#x9898;&#x5C06;&#x4F1A;&#x5728;&#x672A;&#x6765;Scrapy&#x53D1;&#x5E03;&#x7248;&#x672C;&#x4E2D;&#x5F97;&#x5230;&#x89E3;&#x51B3;&#x3002;&#x6211;&#x4EEC;&#x6253;&#x7B97;&#x8F6C;&#x5316;&#x5230;&#x4E00;&#x4E2A;&#x65B0;&#x7684;&#x8FDB;&#x7A0B;&#x6A21;&#x578B;&#xFF0C; &#x5E76;&#x5728;&#x53EF;&#x56DE;&#x6536;&#x7684;&#x5B50;&#x8FDB;&#x7A0B;&#x6C60;&#x4E2D;&#x8FD0;&#x884C;spider&#x3002;</p>
+
+                                
+                                </section>
+                            
+    </div>
+    <div class="search-results">
+        <div class="has-results">
+            
+            <h1 class="search-results-title"><span class='search-results-count'></span> results matching "<span class='search-query'></span>"</h1>
+            <ul class="search-results-list"></ul>
+            
+        </div>
+        <div class="no-results">
+            
+            <h1 class="search-results-title">No results matching "<span class='search-query'></span>"</h1>
+            
+        </div>
+    </div>
+</div>
+
+                        </div>
+                    </div>
+                
+            </div>
+
+            
+                
+                <a href="Using Firebug for scraping.html" class="navigation navigation-prev " aria-label="Previous page: 用Firebug爬取">
+                    <i class="fa fa-angle-left"></i>
+                </a>
+                
+                
+                <a href="Downloading and processing files and images.html" class="navigation navigation-next " aria-label="Next page: 下载和处理文件和图片">
+                    <i class="fa fa-angle-right"></i>
+                </a>
+                
+            
+        
+    </div>
+
+    <script>
+        var gitbook = gitbook || [];
+        gitbook.push(function() {
+            gitbook.page.hasChanged({"page":{"title":"调试内存溢出","level":"1.5.8","depth":2,"next":{"title":"下载和处理文件和图片","level":"1.5.9","depth":2,"path":"4.SOLVING SPECIFIC PROBLEMS/Downloading and processing files and images.md","ref":"4.SOLVING SPECIFIC PROBLEMS/Downloading and processing files and images.md","articles":[]},"previous":{"title":"用Firebug爬取","level":"1.5.7","depth":2,"path":"4.SOLVING SPECIFIC PROBLEMS/Using Firebug for scraping.md","ref":"4.SOLVING SPECIFIC PROBLEMS/Using Firebug for scraping.md","articles":[]},"dir":"ltr"},"config":{"gitbook":"*","theme":"default","variables":{},"plugins":[],"pluginsConfig":{"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"}},"file":{"path":"4.SOLVING SPECIFIC PROBLEMS/Debugging memory leaks.md","mtime":"2018-04-30T14:00:48.000Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2018-05-08T09:17:40.626Z"},"basePath":"..","book":{"language":""}});
+        });
+    </script>
+</div>
+
+        
+    <script src="../gitbook/gitbook.js"></script>
+    <script src="../gitbook/theme.js"></script>
+    
+        
+        <script src="../gitbook/gitbook-plugin-search/search-engine.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-search/search.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-lunr/lunr.min.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-lunr/search-lunr.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-sharing/buttons.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-fontsettings/fontsettings.js"></script>
+        
+    
+
+    </body>
+</html>
+
