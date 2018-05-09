@@ -10,11 +10,15 @@
 
 <br/>
 
-​		**承接爬虫项目～～[邮箱联系](mailto:karma@d0g3.cn)**
+文档不定时完善更新，尽量是内容浅显易懂！
+
+如有错误，请多多包涵，和请大佬指正 **:)**
+
+**承接爬虫项目～～[邮箱联系](mailto:karma@d0g3.cn)**
 
 <br/>
 
 <br/>
 
-编辑：*KarmA、Hu3sky、Patrilic、Jas0nwhy*、h0ryit
+编辑：*KarmA、Hu3sky、Patrilic、Jas0nwhy*、H0ryit
 

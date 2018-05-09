@@ -38,7 +38,7 @@
     * [日志记录](3.BULIT-IN SERVICES/Logging.md)
     * [状态收集](3.BULIT-IN SERVICES/Stats Collection.md)
     * [发送邮件](3.BULIT-IN SERVICES/Sending e-mail.md)
-    * [第一节](3.BULIT-IN SERVICES/Telnet Console.md)
+    * [远程控制](3.BULIT-IN SERVICES/Telnet Console.md)
     * [网络服务](3.BULIT-IN SERVICES/Web Service.md)
 
 5. [解决特殊问题(SOLVING SPECIFIC PROBLEMS)](4.SOLVING SPECIFIC PROBLEMS/README.md)
@@ -53,7 +53,7 @@
     * [下载和处理文件和图片](4.SOLVING SPECIFIC PROBLEMS/Downloading and processing files and images.md)
     * [部署爬虫](4.SOLVING SPECIFIC PROBLEMS/Deploying Spiders.md)
     * [自动Throttle拓展](4.SOLVING SPECIFIC PROBLEMS/AutoThrottle extension.md)
-    * [Web Service](4.SOLVING SPECIFIC PROBLEMS/Benchmarking.md)
+    * [性能测试](4.SOLVING SPECIFIC PROBLEMS/Benchmarking.md)
     * [如何暂停与继续爬取](4.SOLVING SPECIFIC PROBLEMS/Jobs_pausing and resuming crawls.md)
 
 6. [Scrapy拓展用法(EXTENDING SCRAPY)](5.EXTENDING SCRAPY/README.md)
